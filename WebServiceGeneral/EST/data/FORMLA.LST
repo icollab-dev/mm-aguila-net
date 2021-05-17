@@ -1,0 +1,1812 @@
+  NMESS          24
+     1 FORM:ERROR  SYNTAX ERROR
+     2 FORM:ERROR  SYMBOL NOT FOUND IN TABLE
+     3 FORM:ERROR  SYMBOL ALREADY DEFIND
+     4 FORM:ERROR  CT TABLE OVER
+     5 FORM:ERROR  FX TABLE OVER
+     6 FORM:ERROR  CONS TABLE OVER
+     7 FORM:ERROR  SYM TABLE OVER
+     8 ERROR  8            
+     9 FORM:ERROR  IQT TABLE OVER
+    10 FORM:ERROR  TP TABLE OVER
+    11 FORM:ERROR  FUNCTION SIZE UNMATCH
+    12 FORM:ERROR  EQUAL SIGN MISSING
+    13 FORM:ERROR  PARENTHES UNMATCH
+    14 FORM:ERROR  TOO LONG FORMULA
+    15 FORM:ERROR  TOO COMPLICATED FORMULA
+    16 FORM:ERROR  FORMULA CAN NOT BE CORRECTLY DECODED
+    17 FORM:ERROR  TOO LONG SYMBOL
+    18 FORM:ERROR  UNDEFINED SYMBOL
+    19 FORM:ERROR  COMPILE ERROR
+    20 ERROR 20            
+    21 FORM:ERROR  ZERO DEVID
+    22 FORM:ERROR  SQRT NEGATIVE
+    23 FORM:ERROR  ALOG NEGATIVE
+    24 FORM:ERROR  EXP DATA OVER
+  VALUE--NVALUE          5000
+  CONS---NCONS()           70
+  SYM----NSYM()            70
+  FUNCN--NF1()             70
+  INST---NP()             700
+  TCON---NC               100
+  TVAL---NT               100
+  BUFF---NQ               100
+  INDX( 1- 5)                 0           0           0           0           0
+  INDX( 6-10)                 0           0           0           0           0
+  INDX(11-15)                 0           0         300           1           1
+  INDX(16-20)                 1           1           0           0           0
+  INDX(21-25)                 0           1           0           0     1033230
+  INDX(26-30)                 0           1           0           0           0
+     1 VALUE001    MWGT1           0.0000000      Energia activa en terminales de generador de TG - 1   
+     2 VALUE002    MWGT2           0.0000000      Energia reactiva en terminales del generador de TG - 2
+     3 VALUE003    MWST            0.0000000      Energia activa en terminales de generador de TV       
+     4 VALUE004    MvarGT1         0.0000000      Energia reactiva en terminales del generador de TG - 1
+     5 VALUE005    MvarGT2         0.0000000      Energia reactiva en terminales del generador de TG - 2
+     6 VALUE006    MvarST          0.0000000      Energia reactiva en terminales del generador de TV    
+     7 VALUE007    52GonGT1        0.0000000                                                            
+     8 VALUE008    52GonGT2        0.0000000                                                            
+     9 VALUE009    CBclGT1         0.0000000                                                            
+    10 VALUE010    CBclGT2         0.0000000                                                            
+    11 VALUE011    CBclST          0.0000000                                                            
+    12 VALUE012    FP              1.0000000      Factor de Potencia General en Terminales del Generador
+    13 VALUE013    CNG100          495.00000      Capacidad Neta Garantizada al 100% en condiciones de D
+    14 VALUE014    CNG75           371.30000                                                            
+    15 VALUE015    CNG50           247.50000                                                            
+    16 VALUE016    CNG25           123.80000                                                            
+    17 VALUE017    AT              1.0000000      Temperatura de Bulbo Seco                             
+    18 VALUE018    RH              1.0000000      Humedad Relativa                                      
+    19 VALUE019    BP              1.0000000      Presion Atmosfirica                                   
+    20 VALUE020    CW              1.0000000      Temperatura de Agua de Mar                            
+    21 VALUE021    PCI             1.0000000      Poder Calorifico Inferior del Combustible             
+    22 VALUE022    CNGco100        435.75559      "Capacidad Neta de Energia al 100%  de Carga" a cond  
+    23 VALUE023    CpwAT100        1.0592164      Factor de Correccion de Capacidad Neta (100%) para T  
+    24 VALUE024    CpwRH100       0.98662901      Factor de Correccion de Capacidad Neta (100%) para H  
+    25 VALUE025    CpwBP100       0.85773478      Factor de Correccion de Capacidad Neta (100%) para P  
+    26 VALUE026    CpwCW100       0.96554919      Factor de Correccion de Capacidad Neta (100%) para T  
+    27 VALUE027    CpwPC100        1.0166107      Factor de Correccion de Capacidad Neta (100%) para V  
+    28 VALUE028    CpwFP100        1.0005000      Factor de Correccion de Capacidad Neta (100%) para F  
+    29 VALUE029    CNGco75         342.09608                                                            
+    30 VALUE030    CpwAT75         1.0590527                                                            
+    31 VALUE031    CpwRH75        0.98662901                                                            
+    32 VALUE032    CpwBP75        0.85773478                                                            
+    33 VALUE033    CpwCW75         1.0107108                                                            
+    34 VALUE034    CpwPC75         1.0166107                                                            
+    35 VALUE035    CpwFP75         1.0005000                                                            
+    36 VALUE036    CNGco50         228.49802                                                            
+    37 VALUE037    CpwAT50         1.0594755                                                            
+    38 VALUE038    CpwRH50        0.98662901                                                            
+    39 VALUE039    CpwBP50        0.85773478                                                            
+    40 VALUE040    CpwCW50         1.0123662                                                            
+    41 VALUE041    CpwPC50         1.0166107                                                            
+    42 VALUE042    CpwFP50         1.0005000                                                            
+    43 VALUE043    CNGco25         124.02706                                                            
+    44 VALUE044    CpwAT25         1.0586736                                                            
+    45 VALUE045    CpwRH25        0.98662901                                                            
+    46 VALUE046    CpwBP25        0.85773478                                                            
+    47 VALUE047    CpwCW25         1.0993983                                                            
+    48 VALUE048    CpwPC25         1.0166107                                                            
+    49 VALUE049    CpwFP25         1.0005000                                                            
+    50 VALUE050    Carga          0.20156891                                                            
+    51 VALUE051    CN              1.0000000      Capacidad Neta Actual                                 
+    52 VALUE052    Eh5             0.0000000                                                            
+    53 VALUE053    CTUNGxx         328874.25      CTUNG a XX de carga (%)                               
+    54 VALUE054    CTUNG100        6722.0000      CTUNG a 100% de carga                                 
+    55 VALUE055    CTUNG75         7225.0000      CTUNG a 75% de carga                                  
+    56 VALUE056    CTUNG55         0.0000000      CTUNG a 55% de carga                                  
+    57 VALUE057    CTUNG50         7677.0000      CTUNG a 50% de carga                                  
+    58 VALUE058    CTUNG25         9871.0000      CTUNG a 25% de carga                                  
+    59 VALUE059    CTUNG2          0.0000000      CTUNG a 2% de carga                                   
+    60 VALUE060    CTOV           0.34301007E+09  Consumo de combustible a operacion sin carga          
+    61 VALUE061    CNGann25        128.60000                                                            
+    62 VALUE062    NPann25         0.0000000                                                            
+    63 VALUE063    CTUN            300567.22      CTUNG corregido : a las condiciones actuales de oper  
+    64 VALUE064    ChrAT           1.0165305      Factor de Correccion de CTUNG para Temperatura de B   
+    65 VALUE065    ChrRH           1.0000634      Factor de Correccion de CTUNG para Humedad Relativa   
+    66 VALUE066    ChrBP           1.0039455      Factor de Correccion de CTUNG para Presion Atmosfir   
+    67 VALUE067    ChrCW          0.89761422      Factor de Correccion de CTUNG para Temperatura de A   
+    68 VALUE068    ChrPCI         0.99811629      Factor de Correccion de CTUNG para Valor Calorifico   
+    69 VALUE069    ChrFP          0.99950000      Factor de correccion de CTUNG para Factor de Potenc   
+    70 VALUE070    CNman           0.0000000                                                            
+    71 VALUE071    CNsum          0.99816926                                                            
+    72 VALUE072    Cargasum       0.20156891                                                            
+    73 VALUE073    EDh             0.0000000      Correccion a la Capacidad Neta Declarada Disponible p 
+    74 VALUE074    CNGann          0.0000000                                                            
+    75 VALUE075    CpwAT           0.0000000      Factor de Correccion de Capacidad Neta para T         
+    76 VALUE076    CpwRH           0.0000000      Factor de Correccion de Capacidad Neta para H         
+    77 VALUE077    CpwBP           0.0000000      Factor de Correccion de Capacidad Neta para P         
+    78 VALUE078    CpwCW           0.0000000      Factor de Correccion de Capacidad Neta para T         
+    79 VALUE079    CpwPCI          0.0000000      Factor de Correccion de Capacidad Neta para V         
+    80 VALUE080    CpwFP           0.0000000      Factor de Correccion de Capacidad Neta para F         
+    81 VALUE081    CNver           0.0000000                                                            
+    82 VALUE082    ChrCTOV         0.0000000      Factor de correccion de CTUNG para Factor de CTOV     
+    83 VALUE083    CTOV2           0.0000000                                                            
+    84 VALUE084    VALUE084        0.0000000                                                            
+    85 VALUE085    VALUE085        0.0000000                                                            
+    86 VALUE086    VALUE086        0.0000000                                                            
+    87 VALUE087    VALUE087        0.0000000                                                            
+    88 VALUE088    VALUE088        0.0000000                                                            
+    89 VALUE089    VALUE089        0.0000000                                                            
+    90 VALUE090    VALUE090        0.0000000                                                            
+    91 VALUE091    VALUE091        0.0000000                                                            
+    92 VALUE092    VALUE092        0.0000000                                                            
+    93 VALUE093    VALUE093        0.0000000                                                            
+    94 VALUE094    VALUE094        0.0000000                                                            
+    95 VALUE095    VALUE095        0.0000000                                                            
+    96 VALUE096    VALUE096        0.0000000                                                            
+    97 VALUE097    VALUE097        0.0000000                                                            
+    98 VALUE098    VALUE098        0.0000000                                                            
+    99 VALUE099    VALUE099        0.0000000                                                            
+   100 VALUE100    VALUE100        0.0000000                                                            
+   101 VALUE101    VALUE101        0.0000000                                                            
+   102 VALUE102    VALUE102        0.0000000                                                            
+   103 VALUE103    VALUE103        0.0000000                                                            
+   104 VALUE104    VALUE104        0.0000000                                                            
+   105 VALUE105    VALUE105        0.0000000                                                            
+   106 VALUE106    VALUE106        0.0000000                                                            
+   107 VALUE107    VALUE107        0.0000000                                                            
+   108 VALUE108    VALUE108        0.0000000                                                            
+   109 VALUE109    VALUE109        0.0000000                                                            
+   110 VALUE110    VALUE110        0.0000000                                                            
+   111 VALUE111    VALUE111        0.0000000                                                            
+   112 VALUE112    VALUE112        0.0000000                                                            
+   113 VALUE113    VALUE113        0.0000000                                                            
+   114 VALUE114    VALUE114        0.0000000                                                            
+   115 VALUE115    VALUE115        0.0000000                                                            
+   116 VALUE116    VALUE116        0.0000000                                                            
+   117 VALUE117    VALUE117        0.0000000                                                            
+   118 VALUE118    VALUE118        0.0000000                                                            
+   119 VALUE119    VALUE119        0.0000000                                                            
+   120 VALUE120    VALUE120        0.0000000                                                            
+   121 VALUE121    VALUE121        0.0000000                                                            
+   122 VALUE122    VALUE122        0.0000000                                                            
+   123 VALUE123    VALUE123        0.0000000                                                            
+   124 VALUE124    VALUE124        0.0000000                                                            
+   125 VALUE125    VALUE125        0.0000000                                                            
+   126 VALUE126    VALUE126        0.0000000                                                            
+   127 VALUE127    VALUE127        0.0000000                                                            
+   128 VALUE128    VALUE128        0.0000000                                                            
+   129 VALUE129    VALUE129        0.0000000                                                            
+   130 VALUE130    VALUE130        0.0000000                                                            
+   131 VALUE131    VALUE131        0.0000000                                                            
+   132 VALUE132    VALUE132        0.0000000                                                            
+   133 VALUE133    VALUE133        0.0000000                                                            
+   134 VALUE134    VALUE134        0.0000000                                                            
+   135 VALUE135    VALUE135        0.0000000                                                            
+   136 VALUE136    VALUE136        0.0000000                                                            
+   137 VALUE137    VALUE137        0.0000000                                                            
+   138 VALUE138    VALUE138        0.0000000                                                            
+   139 VALUE139    VALUE139        0.0000000                                                            
+   140 VALUE140    VALUE140        0.0000000                                                            
+   141 VALUE141    VALUE141        0.0000000                                                            
+   142 VALUE142    VALUE142        0.0000000                                                            
+   143 VALUE143    VALUE143        0.0000000                                                            
+   144 VALUE144    VALUE144        0.0000000                                                            
+   145 VALUE145    VALUE145        0.0000000                                                            
+   146 VALUE146    VALUE146        0.0000000                                                            
+   147 VALUE147    VALUE147        0.0000000                                                            
+   148 VALUE148    VALUE148        0.0000000                                                            
+   149 VALUE149    VALUE149        0.0000000                                                            
+   150 VALUE150    VALUE150        0.0000000                                                            
+   151 VALUE151    VALUE151        0.0000000                                                            
+   152 VALUE152    VALUE152        0.0000000                                                            
+   153 VALUE153    VALUE153        0.0000000                                                            
+   154 VALUE154    VALUE154        0.0000000                                                            
+   155 VALUE155    VALUE155        0.0000000                                                            
+   156 VALUE156    VALUE156        0.0000000                                                            
+   157 VALUE157    VALUE157        0.0000000                                                            
+   158 VALUE158    VALUE158        0.0000000                                                            
+   159 VALUE159    VALUE159        0.0000000                                                            
+   160 VALUE160    VALUE160        0.0000000                                                            
+   161 VALUE161    VALUE161        0.0000000                                                            
+   162 VALUE162    VALUE162        0.0000000                                                            
+   163 VALUE163    VALUE163        0.0000000                                                            
+   164 VALUE164    VALUE164        0.0000000                                                            
+   165 VALUE165    VALUE165        0.0000000                                                            
+   166 VALUE166    VALUE166        0.0000000                                                            
+   167 VALUE167    VALUE167        0.0000000                                                            
+   168 VALUE168    VALUE168        0.0000000                                                            
+   169 VALUE169    VALUE169        0.0000000                                                            
+   170 VALUE170    VALUE170        0.0000000                                                            
+   171 VALUE171    VALUE171        0.0000000                                                            
+   172 VALUE172    VALUE172        0.0000000                                                            
+   173 VALUE173    VALUE173        0.0000000                                                            
+   174 VALUE174    VALUE174        0.0000000                                                            
+   175 VALUE175    VALUE175        0.0000000                                                            
+   176 VALUE176    VALUE176        0.0000000                                                            
+   177 VALUE177    VALUE177        0.0000000                                                            
+   178 VALUE178    VALUE178        0.0000000                                                            
+   179 VALUE179    VALUE179        0.0000000                                                            
+   180 VALUE180    VALUE180        0.0000000                                                            
+   181 VALUE181    VALUE181        0.0000000                                                            
+   182 VALUE182    VALUE182        0.0000000                                                            
+   183 VALUE183    VALUE183        0.0000000                                                            
+   184 VALUE184    VALUE184        0.0000000                                                            
+   185 VALUE185    VALUE185        0.0000000                                                            
+   186 VALUE186    VALUE186        0.0000000                                                            
+   187 VALUE187    VALUE187        0.0000000                                                            
+   188 VALUE188    VALUE188        0.0000000                                                            
+   189 VALUE189    VALUE189        0.0000000                                                            
+   190 VALUE190    VALUE190        0.0000000                                                            
+   191 VALUE191    VALUE191        0.0000000                                                            
+   192 VALUE192    VALUE192        0.0000000                                                            
+   193 VALUE193    VALUE193        0.0000000                                                            
+   194 VALUE194    VALUE194        0.0000000                                                            
+   195 VALUE195    VALUE195        0.0000000                                                            
+   196 VALUE196    VALUE196        0.0000000                                                            
+   197 VALUE197    VALUE197        0.0000000                                                            
+   198 VALUE198    VALUE198        0.0000000                                                            
+   199 VALUE199    VALUE199        0.0000000                                                            
+   200 VALUE200    VALUE200        0.0000000                                                            
+   201 VALUE201    VALUE201        0.0000000                                                            
+   202 VALUE202    VALUE202        0.0000000                                                            
+   203 VALUE203    VALUE203        0.0000000                                                            
+   204 VALUE204    VALUE204        0.0000000                                                            
+   205 VALUE205    VALUE205        0.0000000                                                            
+   206 VALUE206    VALUE206        0.0000000                                                            
+   207 VALUE207    VALUE207        0.0000000                                                            
+   208 VALUE208    VALUE208        0.0000000                                                            
+   209 VALUE209    VALUE209        0.0000000                                                            
+   210 VALUE210    VALUE210        0.0000000                                                            
+   211 VALUE211    VALUE211        0.0000000                                                            
+   212 VALUE212    VALUE212        0.0000000                                                            
+   213 VALUE213    VALUE213        0.0000000                                                            
+   214 VALUE214    VALUE214        0.0000000                                                            
+   215 VALUE215    VALUE215        0.0000000                                                            
+   216 VALUE216    VALUE216        0.0000000                                                            
+   217 VALUE217    VALUE217        0.0000000                                                            
+   218 VALUE218    VALUE218        0.0000000                                                            
+   219 VALUE219    VALUE219        0.0000000                                                            
+   220 VALUE220    VALUE220        0.0000000                                                            
+   221 VALUE221    VALUE221        0.0000000                                                            
+   222 VALUE222    VALUE222        0.0000000                                                            
+   223 VALUE223    VALUE223        0.0000000                                                            
+   224 VALUE224    VALUE224        0.0000000                                                            
+   225 VALUE225    VALUE225        0.0000000                                                            
+   226 VALUE226    VALUE226        0.0000000                                                            
+   227 VALUE227    VALUE227        0.0000000                                                            
+   228 VALUE228    VALUE228        0.0000000                                                            
+   229 VALUE229    VALUE229        0.0000000                                                            
+   230 VALUE230    VALUE230        0.0000000                                                            
+   231 VALUE231    VALUE231        0.0000000                                                            
+   232 VALUE232    VALUE232        0.0000000                                                            
+   233 VALUE233    VALUE233        0.0000000                                                            
+   234 VALUE234    VALUE234        0.0000000                                                            
+   235 VALUE235    VALUE235        0.0000000                                                            
+   236 VALUE236    VALUE236        0.0000000                                                            
+   237 VALUE237    VALUE237        0.0000000                                                            
+   238 VALUE238    VALUE238        0.0000000                                                            
+   239 VALUE239    VALUE239        0.0000000                                                            
+   240 VALUE240    VALUE240        0.0000000                                                            
+   241 VALUE241    VALUE241        0.0000000                                                            
+   242 VALUE242    VALUE242        0.0000000                                                            
+   243 VALUE243    VALUE243        0.0000000                                                            
+   244 VALUE244    VALUE244        0.0000000                                                            
+   245 VALUE245    VALUE245        0.0000000                                                            
+   246 VALUE246    VALUE246        0.0000000                                                            
+   247 VALUE247    VALUE247        0.0000000                                                            
+   248 VALUE248    VALUE248        0.0000000                                                            
+   249 VALUE249    VALUE249        0.0000000                                                            
+   250 VALUE250    VALUE250        0.0000000                                                            
+   251 VALUE251    VALUE251        0.0000000                                                            
+   252 VALUE252    VALUE252        0.0000000                                                            
+   253 VALUE253    VALUE253        0.0000000                                                            
+   254 VALUE254    VALUE254        0.0000000                                                            
+   255 VALUE255    VALUE255        0.0000000                                                            
+   256 VALUE256    VALUE256        0.0000000                                                            
+   257 VALUE257    VALUE257        0.0000000                                                            
+   258 VALUE258    VALUE258        0.0000000                                                            
+   259 VALUE259    VALUE259        0.0000000                                                            
+   260 VALUE260    VALUE260        0.0000000                                                            
+   261 VALUE261    VALUE261        0.0000000                                                            
+   262 VALUE262    VALUE262        0.0000000                                                            
+   263 VALUE263    VALUE263        0.0000000                                                            
+   264 VALUE264    VALUE264        0.0000000                                                            
+   265 VALUE265    VALUE265        0.0000000                                                            
+   266 VALUE266    VALUE266        0.0000000                                                            
+   267 VALUE267    VALUE267        0.0000000                                                            
+   268 VALUE268    VALUE268        0.0000000                                                            
+   269 VALUE269    VALUE269        0.0000000                                                            
+   270 VALUE270    VALUE270        0.0000000                                                            
+   271 VALUE271    VALUE271        0.0000000                                                            
+   272 VALUE272    VALUE272        0.0000000                                                            
+   273 VALUE273    VALUE273        0.0000000                                                            
+   274 VALUE274    VALUE274        0.0000000                                                            
+   275 VALUE275    VALUE275        0.0000000                                                            
+   276 VALUE276    VALUE276        0.0000000                                                            
+   277 VALUE277    VALUE277        0.0000000                                                            
+   278 VALUE278    VALUE278        0.0000000                                                            
+   279 VALUE279    VALUE279        0.0000000                                                            
+   280 VALUE280    VALUE280        0.0000000                                                            
+   281 VALUE281    VALUE281        0.0000000                                                            
+   282 VALUE282    VALUE282        0.0000000                                                            
+   283 VALUE283    VALUE283        0.0000000                                                            
+   284 VALUE284    VALUE284        0.0000000                                                            
+   285 VALUE285    VALUE285        0.0000000                                                            
+   286 VALUE286    VALUE286        0.0000000                                                            
+   287 VALUE287    VALUE287        0.0000000                                                            
+   288 VALUE288    VALUE288        0.0000000                                                            
+   289 VALUE289    VALUE289        0.0000000                                                            
+   290 VALUE290    VALUE290        0.0000000                                                            
+   291 VALUE291    VALUE291        0.0000000                                                            
+   292 VALUE292    VALUE292        0.0000000                                                            
+   293 VALUE293    VALUE293        0.0000000                                                            
+   294 VALUE294    VALUE294        0.0000000                                                            
+   295 VALUE295    VALUE295        0.0000000                                                            
+   296 VALUE296    VALUE296        0.0000000                                                            
+   297 VALUE297    VALUE297        0.0000000                                                            
+   298 VALUE298    VALUE298        0.0000000                                                            
+   299 VALUE299    VALUE299        0.0000000                                                            
+   300 VALUE300    VALUE300        0.0000000                                                            
+  SOURCE FILE NOT SETTING           1         154
+  SOURCE FILE NOT SETTING           2         155
+  ********** KT **********           3
+  CONS            1
+           1 LIMIT     1.000000000000000E-005
+  CONS            2
+           2 LIM100     100.000000000000     
+  CONS            3
+           3 LIM75      75.0000000000000     
+  CONS            4
+           4 LIM50      50.0000000000000     
+  CONS            5
+           5 LIM25      25.0000000000000     
+  CONS            6
+           6 LIM2       2.00000000000000     
+  CONS            7
+           7 LIM0      0.000000000000000E+000
+ 
+          12 CNG100=495.0
+           1 T:CON   =       495.000000000000        495.000000000000     
+ 
+          11 CNG75=371.3
+           2 T:CON   =       371.300000000000        371.300000000000     
+ 
+          11 CNG50=247.5
+           3 T:CON   =       247.500000000000        247.500000000000     
+ 
+          11 CNG25=123.8
+           4 T:CON   =       123.800000000000        123.800000000000     
+ 
+          26 CpwAT100=func3(1,AT,100.0)
+           6 AT      FUNC3 T:CON     0.0000000E+00   1.00000000000000     
+   100.000000000000        1.05921636243995     
+ 
+          26 CpwRH100=func3(2,RH,100.0)
+           8 RH      FUNC3 T:CON     0.0000000E+00   1.00000000000000     
+   100.000000000000       0.986629012637568     
+ 
+          26 CpwBP100=func3(3,BP,100.0)
+          10 BP      FUNC3 T:CON     0.0000000E+00   1.00000000000000     
+   100.000000000000       0.857734777658199     
+ 
+          27 CpwPC100=func3(4,PCI,100.0)
+          12 PCI     FUNC3 T:CON     0.0000000E+00   1.00000000000000     
+   100.000000000000        1.01661071600000     
+ 
+          26 CpwCW100=func3(5,CW,100.0)
+          14 CW      FUNC3 T:CON     0.0000000E+00   1.00000000000000     
+   100.000000000000       0.965549192305626     
+ 
+          26 CpwFP100=func3(6,FP,100.0)
+          16 FP      FUNC3 T:CON     0.0000000E+00   1.00000000000000     
+   100.000000000000        1.00050000000000     
+ 
+          69 CNGco100=CNG100*CpwAT100*CpwRH100*CpwBP100*CpwCW100*CpwPC100*CpwFP1
+ 00
+          17 CNG100  *    CpwAT100   495.000000000000     
+   1.05921636243995        524.312099407777     
+          18 T:VAL   *    CpwRH100   524.312099407777     
+  0.986629012637568        517.301528952625     
+          19 T:VAL   *    CpwBP100   517.301528952625     
+  0.857734777658199        443.707511918426     
+          20 T:VAL   *    CpwCW100   443.707511918426     
+  0.965549192305626        428.421429752775     
+          21 T:VAL   *    CpwPC100   428.421429752775     
+   1.01661071600000        435.537816450713     
+          22 T:VAL   *    CpwFP100   435.537816450713     
+   1.00050000000000        435.755585358938     
+ 
+          24 CpwAT75=func3(1,AT,75.0)
+          24 AT      FUNC3 T:CON     0.0000000E+00   1.00000000000000     
+   75.0000000000000        1.05905265809193     
+ 
+          24 CpwRH75=func3(2,RH,75.0)
+          26 RH      FUNC3 T:CON     0.0000000E+00   1.00000000000000     
+   75.0000000000000       0.986629012637568     
+ 
+          24 CpwBP75=func3(3,BP,75.0)
+          28 BP      FUNC3 T:CON     0.0000000E+00   1.00000000000000     
+   75.0000000000000       0.857734777658199     
+ 
+          25 CpwPC75=func3(4,PCI,75.0)
+          30 PCI     FUNC3 T:CON     0.0000000E+00   1.00000000000000     
+   75.0000000000000        1.01661071600000     
+ 
+          24 CpwCW75=func3(5,CW,75.0)
+          32 CW      FUNC3 T:CON     0.0000000E+00   1.00000000000000     
+   75.0000000000000        1.01071082553944     
+ 
+          24 CpwFP75=func3(6,FP,75.0)
+          34 FP      FUNC3 T:CON     0.0000000E+00   1.00000000000000     
+   75.0000000000000        1.00050000000000     
+ 
+          61 CNGco75=CNG75*CpwAT75*CpwRH75*CpwBP75*CpwCW75*CpwPC75*CpwFP75
+          35 CNG75   *    CpwAT75    371.300000000000     
+   1.05905265809193        393.226251949533     
+          36 T:VAL   *    CpwRH75    393.226251949533     
+  0.986629012637568        387.968428704139     
+          37 T:VAL   *    CpwBP75    387.968428704139     
+  0.857734777658199        332.774013932946     
+          38 T:VAL   *    CpwCW75    332.774013932946     
+   1.01071082553944        336.338298340241     
+          39 T:VAL   *    CpwPC75    336.338298340241     
+   1.01661071600000        341.925118293894     
+          40 T:VAL   *    CpwFP75    341.925118293894     
+   1.00050000000000        342.096080853041     
+ 
+          24 CpwAT50=func3(1,AT,50.0)
+          42 AT      FUNC3 T:CON     0.0000000E+00   1.00000000000000     
+   50.0000000000000        1.05947552850184     
+ 
+          24 CpwRH50=func3(2,RH,50.0)
+          44 RH      FUNC3 T:CON     0.0000000E+00   1.00000000000000     
+   50.0000000000000       0.986629012637568     
+ 
+          24 CpwBP50=func3(3,BP,50.0)
+          46 BP      FUNC3 T:CON     0.0000000E+00   1.00000000000000     
+   50.0000000000000       0.857734777658199     
+ 
+          25 CpwPC50=func3(4,PCI,50.0)
+          48 PCI     FUNC3 T:CON     0.0000000E+00   1.00000000000000     
+   50.0000000000000        1.01661071600000     
+ 
+          24 CpwCW50=func3(5,CW,50.0)
+          50 CW      FUNC3 T:CON     0.0000000E+00   1.00000000000000     
+   50.0000000000000        1.01236620046281     
+ 
+          24 CpwFP50=func3(6,FP,50.0)
+          52 FP      FUNC3 T:CON     0.0000000E+00   1.00000000000000     
+   50.0000000000000        1.00050000000000     
+ 
+          61 CNGco50=CNG50*CpwAT50*CpwRH50*CpwBP50*CpwCW50*CpwPC50*CpwFP50
+          53 CNG50   *    CpwAT50    247.500000000000     
+   1.05947552850184        262.220193304206     
+          54 T:VAL   *    CpwRH50    262.220193304206     
+  0.986629012637568        258.714050413360     
+          55 T:VAL   *    CpwBP50    258.714050413360     
+  0.857734777658199        221.908038508356     
+          56 T:VAL   *    CpwCW50    221.908038508356     
+   1.01236620046281        224.652197796860     
+          57 T:VAL   *    CpwPC50    224.652197796860     
+   1.01661071600000        228.383831653239     
+          58 T:VAL   *    CpwFP50    228.383831653239     
+   1.00050000000000        228.498023569066     
+ 
+          24 CpwAT25=func3(1,AT,25.0)
+          60 AT      FUNC3 T:CON     0.0000000E+00   1.00000000000000     
+   25.0000000000000        1.05867360446278     
+ 
+          24 CpwRH25=func3(2,RH,25.0)
+          62 RH      FUNC3 T:CON     0.0000000E+00   1.00000000000000     
+   25.0000000000000       0.986629012637568     
+ 
+          24 CpwBP25=func3(3,BP,25.0)
+          64 BP      FUNC3 T:CON     0.0000000E+00   1.00000000000000     
+   25.0000000000000       0.857734777658199     
+ 
+          25 CpwPC25=func3(4,PCI,25.0)
+          66 PCI     FUNC3 T:CON     0.0000000E+00   1.00000000000000     
+   25.0000000000000        1.01661071600000     
+ 
+          24 CpwCW25=func3(5,CW,25.0)
+          68 CW      FUNC3 T:CON     0.0000000E+00   1.00000000000000     
+   25.0000000000000        1.09939826789279     
+ 
+          24 CpwFP25=func3(6,FP,25.0)
+          70 FP      FUNC3 T:CON     0.0000000E+00   1.00000000000000     
+   25.0000000000000        1.00050000000000     
+ 
+          61 CNGco25=CNG25*CpwAT25*CpwRH25*CpwBP25*CpwCW25*CpwPC25*CpwFP25
+          71 CNG25   *    CpwAT25    123.800000000000     
+   1.05867360446278        131.063792232492     
+          72 T:VAL   *    CpwRH25    131.063792232492     
+  0.986629012637568        129.311339922879     
+          73 T:VAL   *    CpwBP25    129.311339922879     
+  0.857734777658199        110.914833397434     
+          74 T:VAL   *    CpwCW25    110.914833397434     
+   1.09939826789279        121.939575720757     
+          75 T:VAL   *    CpwPC25    121.939575720757     
+   1.01661071600000        123.965079382215     
+          76 T:VAL   *    CpwFP25    123.965079382215     
+   1.00050000000000        124.027061921906     
+             IF(CN.GE.CNGco100)100
+             IF(CN.GE.CNGco75)075
+             IF(CN.GE.CNGco50)050
+             IF(CN.GE.CNGco25)025
+             IF(CN.GE.LIM0)000
+ 
+           7 Carga=0
+          77 T:CON   =      0.000000000000000E+000  0.000000000000000E+000
+             gotoNEXT1
+             100
+   LABEL     100                1          78
+   IF   J,NIF,MIF,NO,A1,IP,A2,JM   1   5  50      76  1050     2  1021    78
+ 
+          11 Carga=100.0
+          78 T:CON   =       100.000000000000        100.000000000000     
+             gotoNEXT1
+             075
+   LABEL     075                2          79
+   IF   J,NIF,MIF,NO,A1,IP,A2,JM   2   5  50      76  1050     2  1028    79
+ 
+          47 Carga=(CN-CNGco75)*25.0/(CNGco100-CNGco75)+75.0
+          79 CN      -    CNGco75    1.00000000000000     
+   342.096080853041       -341.096080853041     
+          80 CNGco100-    CNGco75    435.755585358938     
+   342.096080853041        93.6595045058971     
+          81 T:VAL   *    T:CON     -341.096080853041     
+   25.0000000000000       -8527.40202132602     
+          82 T:VAL   /    T:VAL     -8527.40202132602     
+   93.6595045058971       -91.0468410687471     
+          83 T:VAL   +    T:CON     -91.0468410687471     
+   75.0000000000000       -16.0468410687471     
+             gotoNEXT1
+             050
+   LABEL     050                3          84
+   IF   J,NIF,MIF,NO,A1,IP,A2,JM   3   5  50      76  1050     2  1035    84
+ 
+          46 Carga=(CN-CNGco50)*25.0/(CNGco75-CNGco50)+50.0
+          84 CN      -    CNGco50    1.00000000000000     
+   228.498023569066       -227.498023569066     
+          85 CNGco75 -    CNGco50    342.096080853041     
+   228.498023569066        113.598057283975     
+          86 T:VAL   *    T:CON     -227.498023569066     
+   25.0000000000000       -5687.45058922664     
+          87 T:VAL   /    T:VAL     -5687.45058922664     
+   113.598057283975       -50.0664423776986     
+          88 T:VAL   +    T:CON     -50.0664423776986     
+   50.0000000000000      -6.644237769857853E-002
+             gotoNEXT1
+             025
+   LABEL     025                4          89
+   IF   J,NIF,MIF,NO,A1,IP,A2,JM   4   5  50      76  1050     2  1042    89
+ 
+          46 Carga=(CN-CNGco25)*25.0/(CNGco50-CNGco25)+25.0
+          89 CN      -    CNGco25    1.00000000000000     
+   124.027061921906       -123.027061921906     
+          90 CNGco50 -    CNGco25    228.498023569066     
+   124.027061921906        104.470961647160     
+          91 T:VAL   *    T:CON     -123.027061921906     
+   25.0000000000000       -3075.67654804765     
+          92 T:VAL   /    T:VAL     -3075.67654804765     
+   104.470961647160       -29.4404923583974     
+          93 T:VAL   +    T:CON     -29.4404923583974     
+   25.0000000000000       -4.44049235839745     
+             gotoNEXT1
+             000
+   LABEL     000                5          94
+   IF   J,NIF,MIF,NO,A1,IP,A2,JM   5   5  50      76  1050     2  6006    94
+ 
+          21 Carga=25.0/CNGco25*CN
+          94 T:CON   /    CNGco25    25.0000000000000     
+   124.027061921906       0.201568912563142     
+          95 T:VAL   *    CN        0.201568912563142     
+   1.00000000000000       0.201568912563142     
+             NEXT1
+   LABEL     NEXT1              6          96
+   GO TO         J,NIF,MIF,NO,JM   1   5  50      77    96
+   GO TO         J,NIF,MIF,NO,JM   2   5  50      78    96
+   GO TO         J,NIF,MIF,NO,JM   3   5  50      83    96
+   GO TO         J,NIF,MIF,NO,JM   4   5  50      88    96
+   GO TO         J,NIF,MIF,NO,JM   5   5  50      93    96
+ 
+          13 CTUNG100=6722
+          96 T:CON   =       6722.00000000000        6722.00000000000     
+ 
+          12 CTUNG75=7225
+          97 T:CON   =       7225.00000000000        7225.00000000000     
+ 
+          12 CTUNG50=7677
+          98 T:CON   =       7677.00000000000        7677.00000000000     
+ 
+          12 CTUNG25=9871
+          99 T:CON   =       9871.00000000000        9871.00000000000     
+ 
+          14 CNGann25=128.6
+         100 T:CON   =       128.600000000000        128.600000000000     
+ 
+          26 ChrCTOV=func3(14,AT,Carga)
+         102 AT      FUNC3 Carga     0.0000000E+00   1.00000000000000     
+  0.201568912563142        1.00589463418807     
+ 
+          22 CTOV=ChrCTOV*341000000
+         103 ChrCTOV *    T:CON      1.00589463418807     
+   341000000.000000        343010070.258131     
+ 
+          15 CTOV2=341000000
+         104 T:CON   =       341000000.000000        341000000.000000     
+             IF(Carga.GE.LIM100)1100
+             IF(Carga.GE.LIM75)1075
+             IF(Carga.GE.LIM50)1050
+             IF(Carga.GE.LIM25)1025
+             IF(Carga.GE.LIM2)1002
+             IF(Carga.GE.LIM0)1000
+ 
+           9 CTUNGxx=0
+         105 T:CON   =      0.000000000000000E+000  0.000000000000000E+000
+             gotoNEXT2
+             1100
+   LABEL     1100               7         106
+   IF   J,NIF,MIF,NO,A1,IP,A2,JM   6  11  50     104  1049     2  6001   106
+ 
+          16 CTUNGxx=CTUNG100
+         106 CTUNG100=       6722.00000000000        6722.00000000000     
+             gotoNEXT2
+             1075
+   LABEL     1075               8         107
+   IF   J,NIF,MIF,NO,A1,IP,A2,JM   7  11  50     104  1049     2  6002   107
+ 
+          54 CTUNGxx=CTUNG100-(CTUNG100-CTUNG75)/25.0*(100.0-Carga)
+         107 CTUNG100-    CTUNG75    6722.00000000000     
+   7225.00000000000       -503.000000000000     
+         108 T:CON   -    Carga      100.000000000000     
+  0.201568912563142        99.7984310874369     
+         109 T:VAL   /    T:CON     -503.000000000000     
+   25.0000000000000       -20.1200000000000     
+         110 T:VAL   *    T:VAL     -20.1200000000000     
+   99.7984310874369       -2007.94443347923     
+         111 CTUNG100-    T:VAL      6722.00000000000     
+  -2007.94443347923        8729.94443347923     
+             gotoNEXT2
+             1050
+   LABEL     1050               9         112
+   IF   J,NIF,MIF,NO,A1,IP,A2,JM   8  11  50     104  1049     2  6003   112
+ 
+          51 CTUNGxx=CTUNG75-(CTUNG75-CTUNG50)/25.0*(75.0-Carga)
+         112 CTUNG75 -    CTUNG50    7225.00000000000     
+   7677.00000000000       -452.000000000000     
+         113 T:CON   -    Carga      75.0000000000000     
+  0.201568912563142        74.7984310874369     
+         114 T:VAL   /    T:CON     -452.000000000000     
+   25.0000000000000       -18.0800000000000     
+         115 T:VAL   *    T:VAL     -18.0800000000000     
+   74.7984310874369       -1352.35563406086     
+         116 CTUNG75 -    T:VAL      7225.00000000000     
+  -1352.35563406086        8577.35563406086     
+             gotoNEXT2
+             1025
+   LABEL     1025              10         117
+   IF   J,NIF,MIF,NO,A1,IP,A2,JM   9  11  50     104  1049     2  6004   117
+ 
+          51 CTUNGxx=CTUNG50-(CTUNG50-CTUNG25)/25.0*(50.0-Carga)
+         117 CTUNG50 -    CTUNG25    7677.00000000000     
+   9871.00000000000       -2194.00000000000     
+         118 T:CON   -    Carga      50.0000000000000     
+  0.201568912563142        49.7984310874369     
+         119 T:VAL   /    T:CON     -2194.00000000000     
+   25.0000000000000       -87.7600000000000     
+         120 T:VAL   *    T:VAL     -87.7600000000000     
+   49.7984310874369       -4370.31031223346     
+         121 CTUNG50 -    T:VAL      7677.00000000000     
+  -4370.31031223346        12047.3103122335     
+             gotoNEXT2
+             1002
+   LABEL     1002              11         122
+   IF   J,NIF,MIF,NO,A1,IP,A2,JM  10  11  50     104  1049     2  6005   122
+ 
+          83 CTUNGxx=((CNGann25*CTUNG25*1000-CTOV2)/23*(Carga-2)+CTOV2)/(CNGann2
+ 5*Carga/25*1000)
+         122 CNGann25*    CTUNG25    128.600000000000     
+   9871.00000000000        1269410.60000000     
+         123 T:VAL   *    T:CON      1269410.60000000     
+   1000.00000000000        1269410600.00000     
+         124 T:VAL   -    CTOV2      1269410600.00000     
+   341000000.000000        928410600.000000     
+         125 Carga   -    T:CON     0.201568912563142     
+   2.00000000000000       -1.79843108743686     
+         126 T:VAL   /    T:CON      928410600.000000     
+   23.0000000000000        40365678.2608696     
+         127 T:VAL   *    T:VAL      40365678.2608696     
+  -1.79843108743686       -72594890.6498220     
+         128 T:VAL   +    CTOV2     -72594890.6498220     
+   341000000.000000        268405109.350178     
+         129 CNGann25*    Carga      128.600000000000     
+  0.201568912563142        25.9217621556200     
+         130 T:VAL   /    T:CON      25.9217621556200     
+   25.0000000000000        1.03687048622480     
+         131 T:VAL   *    T:CON      1.03687048622480     
+   1000.00000000000        1036.87048622480     
+         132 T:VAL   /    T:VAL      268405109.350178     
+   1036.87048622480        258860.786294949     
+             gotoNEXT2
+             1000
+   LABEL     1000              12         133
+   IF   J,NIF,MIF,NO,A1,IP,A2,JM  11  11  50     104  1049     2  6006   133
+ 
+          38 CTUNGxx=CTOV2/(CNGann25*Carga/25*1000)
+         133 CNGann25*    Carga      128.600000000000     
+  0.201568912563142        25.9217621556200     
+         134 T:VAL   /    T:CON      25.9217621556200     
+   25.0000000000000        1.03687048622480     
+         135 T:VAL   *    T:CON      1.03687048622480     
+   1000.00000000000        1036.87048622480     
+         136 CTOV2   /    T:VAL      341000000.000000     
+   1036.87048622480        328874.246620295     
+             NEXT2
+   LABEL     NEXT2             13         137
+   GO TO         J,NIF,MIF,NO,JM   6  11  50     105   137
+   GO TO         J,NIF,MIF,NO,JM   7  11  50     106   137
+   GO TO         J,NIF,MIF,NO,JM   8  11  50     111   137
+   GO TO         J,NIF,MIF,NO,JM   9  11  50     116   137
+   GO TO         J,NIF,MIF,NO,JM  10  11  50     121   137
+   GO TO         J,NIF,MIF,NO,JM  11  11  50     132   137
+ 
+          23 ChrAT=func3(7,AT,Carga)
+         138 AT      FUNC3 Carga     0.0000000E+00   1.00000000000000     
+  0.201568912563142        1.01653050423236     
+ 
+          23 ChrRH=func3(8,RH,Carga)
+         140 RH      FUNC3 Carga     0.0000000E+00   1.00000000000000     
+  0.201568912563142        1.00006340366213     
+ 
+          23 ChrBP=func3(9,BP,Carga)
+         142 BP      FUNC3 Carga     0.0000000E+00   1.00000000000000     
+  0.201568912563142        1.00394550223441     
+ 
+          26 ChrPCI=func3(10,PCI,Carga)
+         144 PCI     FUNC3 Carga     0.0000000E+00   1.00000000000000     
+  0.201568912563142       0.998116288000000     
+ 
+          24 ChrCW=func3(11,CW,Carga)
+         146 CW      FUNC3 Carga     0.0000000E+00   1.00000000000000     
+  0.201568912563142       0.897614221975412     
+ 
+          24 ChrFP=func3(12,FP,Carga)
+         148 FP      FUNC3 Carga     0.0000000E+00   1.00000000000000     
+  0.201568912563142       0.999500000000000     
+ 
+          27 ChrAT100=func3(7,AT,LIM100)
+         150 AT      FUNC3 LIM100    0.0000000E+00   1.00000000000000     
+   100.000000000000        1.02061823484345     
+  SOURCE          60  ChrAT100   5001
+   8024     52   1016   9000     60      0
+   1016     53   6001   7000    -60      0
+ 
+          27 ChrRH100=func3(8,RH,LIM100)
+         152 RH      FUNC3 LIM100    0.0000000E+00   1.00000000000000     
+   100.000000000000        1.00006340366213     
+  SOURCE          61  ChrRH100   5002
+   8025     52   1017   9000     61      0
+   1017     53   6001   7001    -61      0
+ 
+          27 ChrBP100=func3(9,BP,LIM100)
+         154 BP      FUNC3 LIM100    0.0000000E+00   1.00000000000000     
+   100.000000000000        1.00394550223441     
+  SOURCE          62  ChrBP100   5003
+   8026     52   1018   9000     62      0
+   1018     53   6001   7002    -62      0
+ 
+          29 ChrPC100=func3(10,PCI,LIM100)
+         156 PCI     FUNC3 LIM100    0.0000000E+00   1.00000000000000     
+   100.000000000000       0.998116288000000     
+  SOURCE          63  ChrPC100   5004
+   8027     52   1020   9000     63      0
+   1020     53   6001   7003    -63      0
+ 
+          28 ChrCW100=func3(11,CW,LIM100)
+         158 CW      FUNC3 LIM100    0.0000000E+00   1.00000000000000     
+   100.000000000000        1.01516963294803     
+  SOURCE          64  ChrCW100   5005
+   8028     52   1019   9000     64      0
+   1019     53   6001   7004    -64      0
+ 
+          28 ChrFP100=func3(12,FP,LIM100)
+         160 FP      FUNC3 LIM100    0.0000000E+00   1.00000000000000     
+   100.000000000000       0.999500000000000     
+  SOURCE          65  ChrFP100   5006
+   8029     52   1011   9000     65      0
+   1011     53   6001   7005    -65      0
+ 
+          25 ChrAT75=func3(7,AT,LIM75)
+         162 AT      FUNC3 LIM75     0.0000000E+00   1.00000000000000     
+   75.0000000000000        1.00871119430974     
+  SOURCE          66  ChrAT75    5007
+   8024     52   1016   9000     66      0
+   1016     53   6002   7006    -66      0
+ 
+          25 ChrRH75=func3(8,RH,LIM75)
+         164 RH      FUNC3 LIM75     0.0000000E+00   1.00000000000000     
+   75.0000000000000        1.00006340366213     
+  SOURCE          67  ChrRH75    5008
+   8025     52   1017   9000     67      0
+   1017     53   6002   7007    -67      0
+ 
+          25 ChrBP75=func3(9,BP,LIM75)
+         166 BP      FUNC3 LIM75     0.0000000E+00   1.00000000000000     
+   75.0000000000000        1.00394550223441     
+  SOURCE          68  ChrBP75    5009
+   8026     52   1018   9000     68      0
+   1018     53   6002   7008    -68      0
+ 
+          27 ChrPC75=func3(10,PCI,LIM75)
+         168 PCI     FUNC3 LIM75     0.0000000E+00   1.00000000000000     
+   75.0000000000000       0.998116288000000     
+  SOURCE          69  ChrPC75    5010
+   8027     52   1020   9000     69      0
+   1020     53   6002   7009    -69      0
+ 
+          26 ChrCW75=func3(11,CW,LIM75)
+         170 CW      FUNC3 LIM75     0.0000000E+00   1.00000000000000     
+   75.0000000000000       0.989200261704143     
+  SOURCE          70  ChrCW75    5011
+   8028     52   1019   9000     70      0
+   1019     53   6002   7010    -70      0
+ 
+          26 ChrFP75=func3(12,FP,LIM75)
+         172 FP      FUNC3 LIM75     0.0000000E+00   1.00000000000000     
+   75.0000000000000       0.999500000000000     
+  SOURCE          71  ChrFP75    5012
+   8029     52   1011   9000     71      0
+   1011     53   6002   7011    -71      0
+ 
+          25 ChrAT50=func3(7,AT,LIM50)
+         174 AT      FUNC3 LIM50     0.0000000E+00   1.00000000000000     
+   50.0000000000000        1.01349915964714     
+  SOURCE          72  ChrAT50    5013
+   8024     52   1016   9000     72      0
+   1016     53   6003   7012    -72      0
+ 
+          25 ChrRH50=func3(8,RH,LIM50)
+         176 RH      FUNC3 LIM50     0.0000000E+00   1.00000000000000     
+   50.0000000000000        1.00006340366213     
+  SOURCE          73  ChrRH50    5014
+   8025     52   1017   9000     73      0
+   1017     53   6003   7013    -73      0
+ 
+          25 ChrBP50=func3(9,BP,LIM50)
+         178 BP      FUNC3 LIM50     0.0000000E+00   1.00000000000000     
+   50.0000000000000        1.00394550223441     
+  SOURCE          74  ChrBP50    5015
+   8026     52   1018   9000     74      0
+   1018     53   6003   7014    -74      0
+ 
+          27 ChrPC50=func3(10,PCI,LIM50)
+         180 PCI     FUNC3 LIM50     0.0000000E+00   1.00000000000000     
+   50.0000000000000       0.998116288000000     
+  SOURCE          75  ChrPC50    5016
+   8027     52   1020   9000     75      0
+   1020     53   6003   7015    -75      0
+ 
+          26 ChrCW50=func3(11,CW,LIM50)
+         182 CW      FUNC3 LIM50     0.0000000E+00   1.00000000000000     
+   50.0000000000000       0.987498407181731     
+  SOURCE          76  ChrCW50    5017
+   8028     52   1019   9000     76      0
+   1019     53   6003   7016    -76      0
+ 
+          26 ChrFP50=func3(12,FP,LIM50)
+         184 FP      FUNC3 LIM50     0.0000000E+00   1.00000000000000     
+   50.0000000000000       0.999500000000000     
+  SOURCE          77  ChrFP50    5018
+   8029     52   1011   9000     77      0
+   1011     53   6003   7017    -77      0
+ 
+          25 ChrAT25=func3(7,AT,LIM25)
+         186 AT      FUNC3 LIM25     0.0000000E+00   1.00000000000000     
+   25.0000000000000        1.01653050423236     
+  SOURCE          78  ChrAT25    5019
+   8024     52   1016   9000     78      0
+   1016     53   6004   7018    -78      0
+ 
+          25 ChrRH25=func3(8,RH,LIM25)
+         188 RH      FUNC3 LIM25     0.0000000E+00   1.00000000000000     
+   25.0000000000000        1.00006340366213     
+  SOURCE          79  ChrRH25    5020
+   8025     52   1017   9000     79      0
+   1017     53   6004   7019    -79      0
+ 
+          25 ChrBP25=func3(9,BP,LIM25)
+         190 BP      FUNC3 LIM25     0.0000000E+00   1.00000000000000     
+   25.0000000000000        1.00394550223441     
+  SOURCE          80  ChrBP25    5021
+   8026     52   1018   9000     80      0
+   1018     53   6004   7020    -80      0
+ 
+          27 ChrPC25=func3(10,PCI,LIM25)
+         192 PCI     FUNC3 LIM25     0.0000000E+00   1.00000000000000     
+   25.0000000000000       0.998116288000000     
+  SOURCE          81  ChrPC25    5022
+   8027     52   1020   9000     81      0
+   1020     53   6004   7021    -81      0
+ 
+          26 ChrCW25=func3(11,CW,LIM25)
+         194 CW      FUNC3 LIM25     0.0000000E+00   1.00000000000000     
+   25.0000000000000       0.897614221975412     
+  SOURCE          82  ChrCW25    5023
+   8028     52   1019   9000     82      0
+   1019     53   6004   7022    -82      0
+ 
+          26 ChrFP25=func3(12,FP,LIM25)
+         196 FP      FUNC3 LIM25     0.0000000E+00   1.00000000000000     
+   25.0000000000000       0.999500000000000     
+  SOURCE          83  ChrFP25    5024
+   8029     52   1011   9000     83      0
+   1011     53   6004   7023    -83      0
+             IF(Carga.GE.LIM100)3100
+             IF(Carga.GE.LIM75)3075
+             IF(Carga.GE.LIM50)3050
+             IF(Carga.GE.LIM25)3025
+             IF(Carga.GE.LIM0)3000
+ 
+           6 CTUN=0
+         197 T:CON   =      0.000000000000000E+000  0.000000000000000E+000
+             gotoNEXT4
+             3100
+   LABEL     3100              14         198
+   IF   J,NIF,MIF,NO,A1,IP,A2,JM  12  16  50     196  1049     2  6001   198
+ 
+          14 ChrAT=ChrAT100
+         198 ChrAT100=       1.02061823484345        1.02061823484345     
+ 
+          14 ChrRH=ChrRH100
+         199 ChrRH100=       1.00006340366213        1.00006340366213     
+ 
+          14 ChrBP=ChrBP100
+         200 ChrBP100=       1.00394550223441        1.00394550223441     
+ 
+          15 ChrPCI=ChrPC100
+         201 ChrPC100=      0.998116288000000       0.998116288000000     
+ 
+          14 ChrCW=ChrCW100
+         202 ChrCW100=       1.01516963294803        1.01516963294803     
+ 
+          14 ChrFP=ChrFP100
+         203 ChrFP100=      0.999500000000000       0.999500000000000     
+             gotoNEXT4
+             3075
+   LABEL     3075              15         204
+   IF   J,NIF,MIF,NO,A1,IP,A2,JM  13  16  50     196  1049     2  6002   204
+ 
+          46 ChrAT=(ChrAT100-ChrAT75)/25*(Carga-75)+ChrAT75
+         204 ChrAT100-    ChrAT75    1.02061823484345     
+   1.00871119430974       1.190704053371050E-002
+         205 Carga   -    T:CON     0.201568912563142     
+   75.0000000000000       -74.7984310874369     
+         206 T:VAL   /    T:CON     1.190704053371050E-002
+   25.0000000000000       4.762816213484200E-004
+         207 T:VAL   *    T:VAL     4.762816213484200E-004
+  -74.7984310874369      -3.562511803264248E-002
+         208 T:VAL   +    ChrAT75  -3.562511803264248E-002
+   1.00871119430974       0.973086076277100     
+ 
+          46 ChrRH=(ChrRH100-ChrRH75)/25*(Carga-75)+ChrRH75
+         209 ChrRH100-    ChrRH75    1.00006340366213     
+   1.00006340366213       0.000000000000000E+000
+         210 Carga   -    T:CON     0.201568912563142     
+   75.0000000000000       -74.7984310874369     
+         211 T:VAL   /    T:CON     0.000000000000000E+000
+   25.0000000000000       0.000000000000000E+000
+         212 T:VAL   *    T:VAL     0.000000000000000E+000
+  -74.7984310874369       0.000000000000000E+000
+         213 T:VAL   +    ChrRH75   0.000000000000000E+000
+   1.00006340366213        1.00006340366213     
+ 
+          46 ChrBP=(ChrBP100-ChrBP75)/25*(Carga-75)+ChrBP75
+         214 ChrBP100-    ChrBP75    1.00394550223441     
+   1.00394550223441       0.000000000000000E+000
+         215 Carga   -    T:CON     0.201568912563142     
+   75.0000000000000       -74.7984310874369     
+         216 T:VAL   /    T:CON     0.000000000000000E+000
+   25.0000000000000       0.000000000000000E+000
+         217 T:VAL   *    T:VAL     0.000000000000000E+000
+  -74.7984310874369       0.000000000000000E+000
+         218 T:VAL   +    ChrBP75   0.000000000000000E+000
+   1.00394550223441        1.00394550223441     
+ 
+          47 ChrPCI=(ChrPC100-ChrPC75)/25*(Carga-75)+ChrPC75
+         219 ChrPC100-    ChrPC75   0.998116288000000     
+  0.998116288000000       0.000000000000000E+000
+         220 Carga   -    T:CON     0.201568912563142     
+   75.0000000000000       -74.7984310874369     
+         221 T:VAL   /    T:CON     0.000000000000000E+000
+   25.0000000000000       0.000000000000000E+000
+         222 T:VAL   *    T:VAL     0.000000000000000E+000
+  -74.7984310874369       0.000000000000000E+000
+         223 T:VAL   +    ChrPC75   0.000000000000000E+000
+  0.998116288000000       0.998116288000000     
+ 
+          46 ChrCW=(ChrCW100-ChrCW75)/25*(Carga-75)+ChrCW75
+         224 ChrCW100-    ChrCW75    1.01516963294803     
+  0.989200261704143       2.596937124389120E-002
+         225 Carga   -    T:CON     0.201568912563142     
+   75.0000000000000       -74.7984310874369     
+         226 T:VAL   /    T:CON     2.596937124389120E-002
+   25.0000000000000       1.038774849755648E-003
+         227 T:VAL   *    T:VAL     1.038774849755648E-003
+  -74.7984310874369      -7.769872901481041E-002
+         228 T:VAL   +    ChrCW75  -7.769872901481041E-002
+  0.989200261704143       0.911501532689333     
+ 
+          46 ChrFP=(ChrFP100-ChrFP75)/25*(Carga-75)+ChrFP75
+         229 ChrFP100-    ChrFP75   0.999500000000000     
+  0.999500000000000       0.000000000000000E+000
+         230 Carga   -    T:CON     0.201568912563142     
+   75.0000000000000       -74.7984310874369     
+         231 T:VAL   /    T:CON     0.000000000000000E+000
+   25.0000000000000       0.000000000000000E+000
+         232 T:VAL   *    T:VAL     0.000000000000000E+000
+  -74.7984310874369       0.000000000000000E+000
+         233 T:VAL   +    ChrFP75   0.000000000000000E+000
+  0.999500000000000       0.999500000000000     
+             gotoNEXT4
+             3050
+   LABEL     3050              16         234
+   IF   J,NIF,MIF,NO,A1,IP,A2,JM  14  16  50     196  1049     2  6003   234
+ 
+          45 ChrAT=(ChrAT75-ChrAT50)/25*(Carga-50)+ChrAT50
+         234 ChrAT75 -    ChrAT50    1.00871119430974     
+   1.01349915964714      -4.787965337398559E-003
+         235 Carga   -    T:CON     0.201568912563142     
+   50.0000000000000       -49.7984310874369     
+         236 T:VAL   /    T:CON    -4.787965337398559E-003
+   25.0000000000000      -1.915186134959423E-004
+         237 T:VAL   *    T:VAL    -1.915186134959423E-004
+  -49.7984310874369       9.537326476139139E-003
+         238 T:VAL   +    ChrAT50   9.537326476139139E-003
+   1.01349915964714        1.02303648612328     
+ 
+          45 ChrRH=(ChrRH75-ChrRH50)/25*(Carga-50)+ChrRH50
+         239 ChrRH75 -    ChrRH50    1.00006340366213     
+   1.00006340366213       0.000000000000000E+000
+         240 Carga   -    T:CON     0.201568912563142     
+   50.0000000000000       -49.7984310874369     
+         241 T:VAL   /    T:CON     0.000000000000000E+000
+   25.0000000000000       0.000000000000000E+000
+         242 T:VAL   *    T:VAL     0.000000000000000E+000
+  -49.7984310874369       0.000000000000000E+000
+         243 T:VAL   +    ChrRH50   0.000000000000000E+000
+   1.00006340366213        1.00006340366213     
+ 
+          45 ChrBP=(ChrBP75-ChrBP50)/25*(Carga-50)+ChrBP50
+         244 ChrBP75 -    ChrBP50    1.00394550223441     
+   1.00394550223441       0.000000000000000E+000
+         245 Carga   -    T:CON     0.201568912563142     
+   50.0000000000000       -49.7984310874369     
+         246 T:VAL   /    T:CON     0.000000000000000E+000
+   25.0000000000000       0.000000000000000E+000
+         247 T:VAL   *    T:VAL     0.000000000000000E+000
+  -49.7984310874369       0.000000000000000E+000
+         248 T:VAL   +    ChrBP50   0.000000000000000E+000
+   1.00394550223441        1.00394550223441     
+ 
+          46 ChrPCI=(ChrPC75-ChrPC50)/25*(Carga-50)+ChrPC50
+         249 ChrPC75 -    ChrPC50   0.998116288000000     
+  0.998116288000000       0.000000000000000E+000
+         250 Carga   -    T:CON     0.201568912563142     
+   50.0000000000000       -49.7984310874369     
+         251 T:VAL   /    T:CON     0.000000000000000E+000
+   25.0000000000000       0.000000000000000E+000
+         252 T:VAL   *    T:VAL     0.000000000000000E+000
+  -49.7984310874369       0.000000000000000E+000
+         253 T:VAL   +    ChrPC50   0.000000000000000E+000
+  0.998116288000000       0.998116288000000     
+ 
+          45 ChrCW=(ChrCW75-ChrCW50)/25*(Carga-50)+ChrCW50
+         254 ChrCW75 -    ChrCW50   0.989200261704143     
+  0.987498407181731       1.701854522411783E-003
+         255 Carga   -    T:CON     0.201568912563142     
+   50.0000000000000       -49.7984310874369     
+         256 T:VAL   /    T:CON     1.701854522411783E-003
+   25.0000000000000       6.807418089647133E-005
+         257 T:VAL   *    T:VAL     6.807418089647133E-005
+  -49.7984310874369      -3.389987406206638E-003
+         258 T:VAL   +    ChrCW50  -3.389987406206638E-003
+  0.987498407181731       0.984108419775525     
+ 
+          45 ChrFP=(ChrFP75-ChrFP50)/25*(Carga-50)+ChrFP50
+         259 ChrFP75 -    ChrFP50   0.999500000000000     
+  0.999500000000000       0.000000000000000E+000
+         260 Carga   -    T:CON     0.201568912563142     
+   50.0000000000000       -49.7984310874369     
+         261 T:VAL   /    T:CON     0.000000000000000E+000
+   25.0000000000000       0.000000000000000E+000
+         262 T:VAL   *    T:VAL     0.000000000000000E+000
+  -49.7984310874369       0.000000000000000E+000
+         263 T:VAL   +    ChrFP50   0.000000000000000E+000
+  0.999500000000000       0.999500000000000     
+             gotoNEXT4
+             3025
+   LABEL     3025              17         264
+   IF   J,NIF,MIF,NO,A1,IP,A2,JM  15  16  50     196  1049     2  6004   264
+ 
+          45 ChrAT=(ChrAT50-ChrAT25)/25*(Carga-25)+ChrAT25
+         264 ChrAT50 -    ChrAT25    1.01349915964714     
+   1.01653050423236      -3.031344585215257E-003
+         265 Carga   -    T:CON     0.201568912563142     
+   25.0000000000000       -24.7984310874369     
+         266 T:VAL   /    T:CON    -3.031344585215257E-003
+   25.0000000000000      -1.212537834086103E-004
+         267 T:VAL   *    T:VAL    -1.212537834086103E-004
+  -24.7984310874369       3.006903591949416E-003
+         268 T:VAL   +    ChrAT25   3.006903591949416E-003
+   1.01653050423236        1.01953740782431     
+ 
+          45 ChrRH=(ChrRH50-ChrRH25)/25*(Carga-25)+ChrRH25
+         269 ChrRH50 -    ChrRH25    1.00006340366213     
+   1.00006340366213       0.000000000000000E+000
+         270 Carga   -    T:CON     0.201568912563142     
+   25.0000000000000       -24.7984310874369     
+         271 T:VAL   /    T:CON     0.000000000000000E+000
+   25.0000000000000       0.000000000000000E+000
+         272 T:VAL   *    T:VAL     0.000000000000000E+000
+  -24.7984310874369       0.000000000000000E+000
+         273 T:VAL   +    ChrRH25   0.000000000000000E+000
+   1.00006340366213        1.00006340366213     
+ 
+          45 ChrBP=(ChrBP50-ChrBP25)/25*(Carga-25)+ChrBP25
+         274 ChrBP50 -    ChrBP25    1.00394550223441     
+   1.00394550223441       0.000000000000000E+000
+         275 Carga   -    T:CON     0.201568912563142     
+   25.0000000000000       -24.7984310874369     
+         276 T:VAL   /    T:CON     0.000000000000000E+000
+   25.0000000000000       0.000000000000000E+000
+         277 T:VAL   *    T:VAL     0.000000000000000E+000
+  -24.7984310874369       0.000000000000000E+000
+         278 T:VAL   +    ChrBP25   0.000000000000000E+000
+   1.00394550223441        1.00394550223441     
+ 
+          46 ChrPCI=(ChrPC50-ChrPC25)/25*(Carga-25)+ChrPC25
+         279 ChrPC50 -    ChrPC25   0.998116288000000     
+  0.998116288000000       0.000000000000000E+000
+         280 Carga   -    T:CON     0.201568912563142     
+   25.0000000000000       -24.7984310874369     
+         281 T:VAL   /    T:CON     0.000000000000000E+000
+   25.0000000000000       0.000000000000000E+000
+         282 T:VAL   *    T:VAL     0.000000000000000E+000
+  -24.7984310874369       0.000000000000000E+000
+         283 T:VAL   +    ChrPC25   0.000000000000000E+000
+  0.998116288000000       0.998116288000000     
+ 
+          45 ChrCW=(ChrCW50-ChrCW25)/25*(Carga-25)+ChrCW25
+         284 ChrCW50 -    ChrCW25   0.987498407181731     
+  0.897614221975412       8.988418520631980E-002
+         285 Carga   -    T:CON     0.201568912563142     
+   25.0000000000000       -24.7984310874369     
+         286 T:VAL   /    T:CON     8.988418520631980E-002
+   25.0000000000000       3.595367408252792E-003
+         287 T:VAL   *    T:VAL     3.595367408252792E-003
+  -24.7984310874369      -8.915947090757333E-002
+         288 T:VAL   +    ChrCW25  -8.915947090757333E-002
+  0.897614221975412       0.808454751067838     
+ 
+          45 ChrFP=(ChrFP50-ChrFP25)/25*(Carga-25)+ChrFP25
+         289 ChrFP50 -    ChrFP25   0.999500000000000     
+  0.999500000000000       0.000000000000000E+000
+         290 Carga   -    T:CON     0.201568912563142     
+   25.0000000000000       -24.7984310874369     
+         291 T:VAL   /    T:CON     0.000000000000000E+000
+   25.0000000000000       0.000000000000000E+000
+         292 T:VAL   *    T:VAL     0.000000000000000E+000
+  -24.7984310874369       0.000000000000000E+000
+         293 T:VAL   +    ChrFP25   0.000000000000000E+000
+  0.999500000000000       0.999500000000000     
+             gotoNEXT4
+             3000
+   LABEL     3000              18         294
+   IF   J,NIF,MIF,NO,A1,IP,A2,JM  16  16  50     196  1049     2  6006   294
+ 
+          13 ChrAT=ChrAT25
+         294 ChrAT25 =       1.01653050423236        1.01653050423236     
+ 
+          13 ChrRH=ChrRH25
+         295 ChrRH25 =       1.00006340366213        1.00006340366213     
+ 
+          13 ChrBP=ChrBP25
+         296 ChrBP25 =       1.00394550223441        1.00394550223441     
+ 
+          14 ChrPCI=ChrPC25
+         297 ChrPC25 =      0.998116288000000       0.998116288000000     
+ 
+          13 ChrCW=ChrCW25
+         298 ChrCW25 =      0.897614221975412       0.897614221975412     
+ 
+          13 ChrFP=ChrFP25
+         299 ChrFP25 =      0.999500000000000       0.999500000000000     
+             NEXT4
+   LABEL     NEXT4             19         300
+   GO TO         J,NIF,MIF,NO,JM  12  16  50     197   300
+   GO TO         J,NIF,MIF,NO,JM  13  16  50     203   300
+   GO TO         J,NIF,MIF,NO,JM  14  16  50     233   300
+   GO TO         J,NIF,MIF,NO,JM  15  16  50     263   300
+   GO TO         J,NIF,MIF,NO,JM  16  16  50     293   300
+ 
+          41 Chrp=ChrAT*ChrRH*ChrBP*ChrPCI*ChrCW*ChrFP
+         300 ChrAT   *    ChrRH      1.01653050423236     
+   1.00006340366213        1.01659495598899     
+         301 T:VAL   *    ChrBP      1.01659495598899     
+   1.00394550223441        1.02060593365933     
+         302 T:VAL   *    ChrPCI     1.02060593365933     
+  0.998116288000000        1.01868340601483     
+         303 T:VAL   *    ChrCW      1.01868340601483     
+  0.897614221975412       0.914384712929261     
+         304 T:VAL   *    ChrFP     0.914384712929261     
+  0.999500000000000       0.913927520572796     
+  SOURCE         115  Chrp       5025
+   1063      3   1064   9000    115      0
+   9000      3   1065   9001      0      0
+   9001      3   1067   9002      0      0
+   9002      3   1066   9003      0      0
+   9003      3   1068   7024   -115      0
+ 
+          17 CTUN=CTUNGxx*Chrp
+         305 CTUNGxx *    Chrp       328874.246620295     
+  0.913927520572796        300567.224793932     
+             IF(Carga.GE.LIM100)4100
+             IF(Carga.GE.LIM75)4075
+             IF(Carga.GE.LIM50)4050
+             IF(Carga.GE.LIM25)4025
+             IF(Carga.GE.LIM0)4000
+             gotoNEXT5
+             4100
+   LABEL     4100              20         306
+   IF   J,NIF,MIF,NO,A1,IP,A2,JM  17  21  50     305  1049     2  6001   306
+ 
+          14 CpwAT=CpwAT100
+         306 CpwAT100=       1.05921636243995        1.05921636243995     
+ 
+          14 CpwRH=CpwRH100
+         307 CpwRH100=      0.986629012637568       0.986629012637568     
+ 
+          14 CpwBP=CpwBP100
+         308 CpwBP100=      0.857734777658199       0.857734777658199     
+ 
+          15 CpwPCI=CpwPC100
+         309 CpwPC100=       1.01661071600000        1.01661071600000     
+ 
+          14 CpwCW=CpwCW100
+         310 CpwCW100=      0.965549192305626       0.965549192305626     
+ 
+          14 CpwFP=CpwFP100
+         311 CpwFP100=       1.00050000000000        1.00050000000000     
+             gotoNEXT5
+             4075
+   LABEL     4075              21         312
+   IF   J,NIF,MIF,NO,A1,IP,A2,JM  18  21  50     305  1049     2  6002   312
+ 
+          46 CpwAT=(CpwAT100-CpwAT75)/25*(Carga-75)+CpwAT75
+         312 CpwAT100-    CpwAT75    1.05921636243995     
+   1.05905265809193       1.637043480244849E-004
+         313 Carga   -    T:CON     0.201568912563142     
+   75.0000000000000       -74.7984310874369     
+         314 T:VAL   /    T:CON     1.637043480244849E-004
+   25.0000000000000       6.548173920979394E-006
+         315 T:VAL   *    T:VAL     6.548173920979394E-006
+  -74.7984310874369      -4.897931357769284E-004
+         316 T:VAL   +    CpwAT75  -4.897931357769284E-004
+   1.05905265809193        1.05856286495615     
+ 
+          46 CpwRH=(CpwRH100-CpwRH75)/25*(Carga-75)+CpwRH75
+         317 CpwRH100-    CpwRH75   0.986629012637568     
+  0.986629012637568       0.000000000000000E+000
+         318 Carga   -    T:CON     0.201568912563142     
+   75.0000000000000       -74.7984310874369     
+         319 T:VAL   /    T:CON     0.000000000000000E+000
+   25.0000000000000       0.000000000000000E+000
+         320 T:VAL   *    T:VAL     0.000000000000000E+000
+  -74.7984310874369       0.000000000000000E+000
+         321 T:VAL   +    CpwRH75   0.000000000000000E+000
+  0.986629012637568       0.986629012637568     
+ 
+          46 CpwBP=(CpwBP100-CpwBP75)/25*(Carga-75)+CpwBP75
+         322 CpwBP100-    CpwBP75   0.857734777658199     
+  0.857734777658199       0.000000000000000E+000
+         323 Carga   -    T:CON     0.201568912563142     
+   75.0000000000000       -74.7984310874369     
+         324 T:VAL   /    T:CON     0.000000000000000E+000
+   25.0000000000000       0.000000000000000E+000
+         325 T:VAL   *    T:VAL     0.000000000000000E+000
+  -74.7984310874369       0.000000000000000E+000
+         326 T:VAL   +    CpwBP75   0.000000000000000E+000
+  0.857734777658199       0.857734777658199     
+ 
+          47 CpwPCI=(CpwPC100-CpwPC75)/25*(Carga-75)+CpwPC75
+         327 CpwPC100-    CpwPC75    1.01661071600000     
+   1.01661071600000       0.000000000000000E+000
+         328 Carga   -    T:CON     0.201568912563142     
+   75.0000000000000       -74.7984310874369     
+         329 T:VAL   /    T:CON     0.000000000000000E+000
+   25.0000000000000       0.000000000000000E+000
+         330 T:VAL   *    T:VAL     0.000000000000000E+000
+  -74.7984310874369       0.000000000000000E+000
+         331 T:VAL   +    CpwPC75   0.000000000000000E+000
+   1.01661071600000        1.01661071600000     
+ 
+          46 CpwCW=(CpwCW100-CpwCW75)/25*(Carga-75)+CpwCW75
+         332 CpwCW100-    CpwCW75   0.965549192305626     
+   1.01071082553944      -4.516163323381495E-002
+         333 Carga   -    T:CON     0.201568912563142     
+   75.0000000000000       -74.7984310874369     
+         334 T:VAL   /    T:CON    -4.516163323381495E-002
+   25.0000000000000      -1.806465329352598E-003
+         335 T:VAL   *    T:VAL    -1.806465329352598E-003
+  -74.7984310874369       0.135120772449424     
+         336 T:VAL   +    CpwCW75   0.135120772449424     
+   1.01071082553944        1.14583159798886     
+ 
+          46 CpwFP=(CpwFP100-CpwFP75)/25*(Carga-75)+CpwFP75
+         337 CpwFP100-    CpwFP75    1.00050000000000     
+   1.00050000000000       0.000000000000000E+000
+         338 Carga   -    T:CON     0.201568912563142     
+   75.0000000000000       -74.7984310874369     
+         339 T:VAL   /    T:CON     0.000000000000000E+000
+   25.0000000000000       0.000000000000000E+000
+         340 T:VAL   *    T:VAL     0.000000000000000E+000
+  -74.7984310874369       0.000000000000000E+000
+         341 T:VAL   +    CpwFP75   0.000000000000000E+000
+   1.00050000000000        1.00050000000000     
+             gotoNEXT5
+             4050
+   LABEL     4050              22         342
+   IF   J,NIF,MIF,NO,A1,IP,A2,JM  19  21  50     305  1049     2  6003   342
+ 
+          45 CpwAT=(CpwAT75-CpwAT50)/25*(Carga-50)+CpwAT50
+         342 CpwAT75 -    CpwAT50    1.05905265809193     
+   1.05947552850184      -4.228704099120684E-004
+         343 Carga   -    T:CON     0.201568912563142     
+   50.0000000000000       -49.7984310874369     
+         344 T:VAL   /    T:CON    -4.228704099120684E-004
+   25.0000000000000      -1.691481639648274E-005
+         345 T:VAL   *    T:VAL    -1.691481639648274E-005
+  -49.7984310874369       8.423313186768926E-004
+         346 T:VAL   +    CpwAT50   8.423313186768926E-004
+   1.05947552850184        1.06031785982052     
+ 
+          45 CpwRH=(CpwRH75-CpwRH50)/25*(Carga-50)+CpwRH50
+         347 CpwRH75 -    CpwRH50   0.986629012637568     
+  0.986629012637568       0.000000000000000E+000
+         348 Carga   -    T:CON     0.201568912563142     
+   50.0000000000000       -49.7984310874369     
+         349 T:VAL   /    T:CON     0.000000000000000E+000
+   25.0000000000000       0.000000000000000E+000
+         350 T:VAL   *    T:VAL     0.000000000000000E+000
+  -49.7984310874369       0.000000000000000E+000
+         351 T:VAL   +    CpwRH50   0.000000000000000E+000
+  0.986629012637568       0.986629012637568     
+ 
+          45 CpwBP=(CpwBP75-CpwBP50)/25*(Carga-50)+CpwBP50
+         352 CpwBP75 -    CpwBP50   0.857734777658199     
+  0.857734777658199       0.000000000000000E+000
+         353 Carga   -    T:CON     0.201568912563142     
+   50.0000000000000       -49.7984310874369     
+         354 T:VAL   /    T:CON     0.000000000000000E+000
+   25.0000000000000       0.000000000000000E+000
+         355 T:VAL   *    T:VAL     0.000000000000000E+000
+  -49.7984310874369       0.000000000000000E+000
+         356 T:VAL   +    CpwBP50   0.000000000000000E+000
+  0.857734777658199       0.857734777658199     
+ 
+          46 CpwPCI=(CpwPC75-CpwPC50)/25*(Carga-50)+CpwPC50
+         357 CpwPC75 -    CpwPC50    1.01661071600000     
+   1.01661071600000       0.000000000000000E+000
+         358 Carga   -    T:CON     0.201568912563142     
+   50.0000000000000       -49.7984310874369     
+         359 T:VAL   /    T:CON     0.000000000000000E+000
+   25.0000000000000       0.000000000000000E+000
+         360 T:VAL   *    T:VAL     0.000000000000000E+000
+  -49.7984310874369       0.000000000000000E+000
+         361 T:VAL   +    CpwPC50   0.000000000000000E+000
+   1.01661071600000        1.01661071600000     
+ 
+          45 CpwCW=(CpwCW75-CpwCW50)/25*(Carga-50)+CpwCW50
+         362 CpwCW75 -    CpwCW50    1.01071082553944     
+   1.01236620046281      -1.655374923371644E-003
+         363 Carga   -    T:CON     0.201568912563142     
+   50.0000000000000       -49.7984310874369     
+         364 T:VAL   /    T:CON    -1.655374923371644E-003
+   25.0000000000000      -6.621499693486577E-005
+         365 T:VAL   *    T:VAL    -6.621499693486577E-005
+  -49.7984310874369       3.297402961815756E-003
+         366 T:VAL   +    CpwCW50   3.297402961815756E-003
+   1.01236620046281        1.01566360342463     
+ 
+          45 CpwFP=(CpwFP75-CpwFP50)/25*(Carga-50)+CpwFP50
+         367 CpwFP75 -    CpwFP50    1.00050000000000     
+   1.00050000000000       0.000000000000000E+000
+         368 Carga   -    T:CON     0.201568912563142     
+   50.0000000000000       -49.7984310874369     
+         369 T:VAL   /    T:CON     0.000000000000000E+000
+   25.0000000000000       0.000000000000000E+000
+         370 T:VAL   *    T:VAL     0.000000000000000E+000
+  -49.7984310874369       0.000000000000000E+000
+         371 T:VAL   +    CpwFP50   0.000000000000000E+000
+   1.00050000000000        1.00050000000000     
+             gotoNEXT5
+             4025
+   LABEL     4025              23         372
+   IF   J,NIF,MIF,NO,A1,IP,A2,JM  20  21  50     305  1049     2  6004   372
+ 
+          45 CpwAT=(CpwAT50-CpwAT25)/25*(Carga-25)+CpwAT25
+         372 CpwAT50 -    CpwAT25    1.05947552850184     
+   1.05867360446278       8.019240390630955E-004
+         373 Carga   -    T:CON     0.201568912563142     
+   25.0000000000000       -24.7984310874369     
+         374 T:VAL   /    T:CON     8.019240390630955E-004
+   25.0000000000000       3.207696156252382E-005
+         375 T:VAL   *    T:VAL     3.207696156252382E-005
+  -24.7984310874369      -7.954583208026079E-004
+         376 T:VAL   +    CpwAT25  -7.954583208026079E-004
+   1.05867360446278        1.05787814614197     
+ 
+          45 CpwRH=(CpwRH50-CpwRH25)/25*(Carga-25)+CpwRH25
+         377 CpwRH50 -    CpwRH25   0.986629012637568     
+  0.986629012637568       0.000000000000000E+000
+         378 Carga   -    T:CON     0.201568912563142     
+   25.0000000000000       -24.7984310874369     
+         379 T:VAL   /    T:CON     0.000000000000000E+000
+   25.0000000000000       0.000000000000000E+000
+         380 T:VAL   *    T:VAL     0.000000000000000E+000
+  -24.7984310874369       0.000000000000000E+000
+         381 T:VAL   +    CpwRH25   0.000000000000000E+000
+  0.986629012637568       0.986629012637568     
+ 
+          45 CpwBP=(CpwBP50-CpwBP25)/25*(Carga-25)+CpwBP25
+         382 CpwBP50 -    CpwBP25   0.857734777658199     
+  0.857734777658199       0.000000000000000E+000
+         383 Carga   -    T:CON     0.201568912563142     
+   25.0000000000000       -24.7984310874369     
+         384 T:VAL   /    T:CON     0.000000000000000E+000
+   25.0000000000000       0.000000000000000E+000
+         385 T:VAL   *    T:VAL     0.000000000000000E+000
+  -24.7984310874369       0.000000000000000E+000
+         386 T:VAL   +    CpwBP25   0.000000000000000E+000
+  0.857734777658199       0.857734777658199     
+ 
+          46 CpwPCI=(CpwPC50-CpwPC25)/25*(Carga-25)+CpwPC25
+         387 CpwPC50 -    CpwPC25    1.01661071600000     
+   1.01661071600000       0.000000000000000E+000
+         388 Carga   -    T:CON     0.201568912563142     
+   25.0000000000000       -24.7984310874369     
+         389 T:VAL   /    T:CON     0.000000000000000E+000
+   25.0000000000000       0.000000000000000E+000
+         390 T:VAL   *    T:VAL     0.000000000000000E+000
+  -24.7984310874369       0.000000000000000E+000
+         391 T:VAL   +    CpwPC25   0.000000000000000E+000
+   1.01661071600000        1.01661071600000     
+ 
+          45 CpwCW=(CpwCW50-CpwCW25)/25*(Carga-25)+CpwCW25
+         392 CpwCW50 -    CpwCW25    1.01236620046281     
+   1.09939826789279      -8.703206742997915E-002
+         393 Carga   -    T:CON     0.201568912563142     
+   25.0000000000000       -24.7984310874369     
+         394 T:VAL   /    T:CON    -8.703206742997915E-002
+   25.0000000000000      -3.481282697199166E-003
+         395 T:VAL   *    T:VAL    -3.481282697199166E-003
+  -24.7984310874369       8.633034906237982E-002
+         396 T:VAL   +    CpwCW25   8.633034906237982E-002
+   1.09939826789279        1.18572861695517     
+ 
+          45 CpwFP=(CpwFP50-CpwFP25)/25*(Carga-25)+CpwFP25
+         397 CpwFP50 -    CpwFP25    1.00050000000000     
+   1.00050000000000       0.000000000000000E+000
+         398 Carga   -    T:CON     0.201568912563142     
+   25.0000000000000       -24.7984310874369     
+         399 T:VAL   /    T:CON     0.000000000000000E+000
+   25.0000000000000       0.000000000000000E+000
+         400 T:VAL   *    T:VAL     0.000000000000000E+000
+  -24.7984310874369       0.000000000000000E+000
+         401 T:VAL   +    CpwFP25   0.000000000000000E+000
+   1.00050000000000        1.00050000000000     
+             gotoNEXT5
+             4000
+   LABEL     4000              24         402
+   IF   J,NIF,MIF,NO,A1,IP,A2,JM  21  21  50     305  1049     2  6006   402
+ 
+          13 CpwAT=CpwAT25
+         402 CpwAT25 =       1.05867360446278        1.05867360446278     
+ 
+          13 CpwRH=CpwRH25
+         403 CpwRH25 =      0.986629012637568       0.986629012637568     
+ 
+          13 CpwBP=CpwBP25
+         404 CpwBP25 =      0.857734777658199       0.857734777658199     
+ 
+          14 CpwPCI=CpwPC25
+         405 CpwPC25 =       1.01661071600000        1.01661071600000     
+ 
+          13 CpwCW=CpwCW25
+         406 CpwCW25 =       1.09939826789279        1.09939826789279     
+ 
+          13 CpwFP=CpwFP25
+         407 CpwFP25 =       1.00050000000000        1.00050000000000     
+             NEXT5
+   LABEL     NEXT5             25         408
+   GO TO         J,NIF,MIF,NO,JM  17  21  50     305   408
+   GO TO         J,NIF,MIF,NO,JM  18  21  50     311   408
+   GO TO         J,NIF,MIF,NO,JM  19  21  50     341   408
+   GO TO         J,NIF,MIF,NO,JM  20  21  50     371   408
+   GO TO         J,NIF,MIF,NO,JM  21  21  50     401   408
+ 
+          40 Cpw=CpwAT*CpwRH*CpwBP*CpwPCI*CpwCW*CpwFP
+         408 CpwAT   *    CpwRH      1.05867360446278     
+  0.986629012637568        1.04451809307657     
+         409 T:VAL   *    CpwBP      1.04451809307657     
+  0.857734777658199       0.895919494324994     
+         410 T:VAL   *    CpwPCI    0.895919494324994     
+   1.01661071600000       0.910801358604090     
+         411 T:VAL   *    CpwCW     0.910801358604090     
+   1.09939826789279        1.00133343604374     
+         412 T:VAL   *    CpwFP      1.00133343604374     
+   1.00050000000000        1.00183410276176     
+  SOURCE         147  Cpw        5026
+   1074      3   1075   9000    147      0
+   9000      3   1076   9001      0      0
+   9001      3   1078   9002      0      0
+   9002      3   1077   9003      0      0
+   9003      3   1079   7025   -147      0
+ 
+          12 CNver=CN/Cpw
+         413 CN      /    Cpw        1.00000000000000     
+   1.00183410276176       0.998169255012678     
+ 
+          11 CNtmp=CNman
+         414 CNman   =      0.000000000000000E+000  0.000000000000000E+000
+  SOURCE         149  CNtmp      5027
+   1069      6   1069   7026    149      0
+             IF(CNman.GE.LIMIT)INP001
+ 
+           8 CNtmp=CN
+         415 CN      =       1.00000000000000        1.00000000000000     
+  SOURCE         150  CNtmp      5027
+   1050      6   1050   7026    150      0
+             INP001
+   LABEL     INP001            26         416
+   IF   J,NIF,MIF,NO,A1,IP,A2,JM  22  22  50     414  1069     2  6000   416
+ 
+          11 CNtmp=CNtmp
+         416 CNtmp   =       1.00000000000000        1.00000000000000     
+  SOURCE         151  CNtmp      5027
+   7026      6   7026   7026    151      0
+             IF(CNtmp.GE.CNGco100)2100
+             IF(CNtmp.GE.CNGco75)2075
+             IF(CNtmp.GE.CNGco50)2050
+             IF(CNtmp.GE.CNGco25)2025
+             IF(CNtmp.GE.LIM0)2000
+ 
+          10 Cargasum=0
+         417 T:CON   =      0.000000000000000E+000  0.000000000000000E+000
+             gotoNEXT3
+             2100
+   LABEL     2100              27         418
+   IF   J,NIF,MIF,NO,A1,IP,A2,JM  23  27  50     416  7026     2  1021   418
+ 
+          14 Cargasum=100.0
+         418 T:CON   =       100.000000000000        100.000000000000     
+             gotoNEXT3
+             2075
+   LABEL     2075              28         419
+   IF   J,NIF,MIF,NO,A1,IP,A2,JM  24  27  50     416  7026     2  1028   419
+ 
+          53 Cargasum=(CNtmp-CNGco75)*25.0/(CNGco100-CNGco75)+75.0
+         419 CNtmp   -    CNGco75    1.00000000000000     
+   342.096080853041       -341.096080853041     
+         420 CNGco100-    CNGco75    435.755585358938     
+   342.096080853041        93.6595045058971     
+         421 T:VAL   *    T:CON     -341.096080853041     
+   25.0000000000000       -8527.40202132602     
+         422 T:VAL   /    T:VAL     -8527.40202132602     
+   93.6595045058971       -91.0468410687471     
+         423 T:VAL   +    T:CON     -91.0468410687471     
+   75.0000000000000       -16.0468410687471     
+             gotoNEXT3
+             2050
+   LABEL     2050              29         424
+   IF   J,NIF,MIF,NO,A1,IP,A2,JM  25  27  50     416  7026     2  1035   424
+ 
+          52 Cargasum=(CNtmp-CNGco50)*25.0/(CNGco75-CNGco50)+50.0
+         424 CNtmp   -    CNGco50    1.00000000000000     
+   228.498023569066       -227.498023569066     
+         425 CNGco75 -    CNGco50    342.096080853041     
+   228.498023569066        113.598057283975     
+         426 T:VAL   *    T:CON     -227.498023569066     
+   25.0000000000000       -5687.45058922664     
+         427 T:VAL   /    T:VAL     -5687.45058922664     
+   113.598057283975       -50.0664423776986     
+         428 T:VAL   +    T:CON     -50.0664423776986     
+   50.0000000000000      -6.644237769857853E-002
+             gotoNEXT3
+             2025
+   LABEL     2025              30         429
+   IF   J,NIF,MIF,NO,A1,IP,A2,JM  26  27  50     416  7026     2  1042   429
+ 
+          52 Cargasum=(CNtmp-CNGco25)*25.0/(CNGco50-CNGco25)+25.0
+         429 CNtmp   -    CNGco25    1.00000000000000     
+   124.027061921906       -123.027061921906     
+         430 CNGco50 -    CNGco25    228.498023569066     
+   124.027061921906        104.470961647160     
+         431 T:VAL   *    T:CON     -123.027061921906     
+   25.0000000000000       -3075.67654804765     
+         432 T:VAL   /    T:VAL     -3075.67654804765     
+   104.470961647160       -29.4404923583974     
+         433 T:VAL   +    T:CON     -29.4404923583974     
+   25.0000000000000       -4.44049235839745     
+             gotoNEXT3
+             2000
+   LABEL     2000              31         434
+   IF   J,NIF,MIF,NO,A1,IP,A2,JM  27  27  50     416  7026     2  6006   434
+ 
+          27 Cargasum=25.0/CNGco25*CNtmp
+         434 T:CON   /    CNGco25    25.0000000000000     
+   124.027061921906       0.201568912563142     
+         435 T:VAL   *    CNtmp     0.201568912563142     
+   1.00000000000000       0.201568912563142     
+             NEXT3
+   LABEL     NEXT3             32         436
+   GO TO         J,NIF,MIF,NO,JM  22  26  50     417   436
+   GO TO         J,NIF,MIF,NO,JM  23  26  50     418   436
+   GO TO         J,NIF,MIF,NO,JM  24  26  50     423   436
+   GO TO         J,NIF,MIF,NO,JM  25  26  50     428   436
+   GO TO         J,NIF,MIF,NO,JM  26  26  50     433   436
+ 
+          30 CNsum=func3(13,Cargasum,100.0)
+         437 CargasumFUNC3 T:CON     0.0000000E+00  0.201568912563142     
+   100.000000000000       0.998169255012678     
+  NC(KT),NP(KT),NPT(KT),NQ,NT,IRA           3
+          31         437         437          11           1          32
+  COMPILE-END:NP         437
+  ---------------------- *FORM-CHKWRT KT,I           3           6
+ VALUE       5000   INDX(13)  300
+ CONS -MCONS   70   NCONS       0    0    7    0    0    0    0   INDX(15)    1
+ FUNCN-MF1     70   NF1         0    0    0    0    0    0    0   INDX(14)    1
+ INST -MP     700   NP          0    0  437    0    0    0    0   INDX(14)    1
+ TCON -MC     100   NC          0    0   31    0    0    0    0
+ SYM  -MSYM    70   NSYM        0    0   27    0    0    0    0
+  -----------------------
+  *VALU        5000
+           1 VALUE001    MWGT1         0.000000000000000E+000
+           2 VALUE002    MWGT2         0.000000000000000E+000
+           3 VALUE003    MWST          0.000000000000000E+000
+           4 VALUE004    MvarGT1       0.000000000000000E+000
+           5 VALUE005    MvarGT2       0.000000000000000E+000
+           6 VALUE006    MvarST        0.000000000000000E+000
+           7 VALUE007    52GonGT1      0.000000000000000E+000
+           8 VALUE008    52GonGT2      0.000000000000000E+000
+           9 VALUE009    CBclGT1       0.000000000000000E+000
+          10 VALUE010    CBclGT2       0.000000000000000E+000
+          11 VALUE011    CBclST        0.000000000000000E+000
+          12 VALUE012    FP             1.00000000000000     
+          13 VALUE013    CNG100         495.000000000000     
+          14 VALUE014    CNG75          371.300000000000     
+          15 VALUE015    CNG50          247.500000000000     
+          16 VALUE016    CNG25          123.800000000000     
+          17 VALUE017    AT             1.00000000000000     
+          18 VALUE018    RH             1.00000000000000     
+          19 VALUE019    BP             1.00000000000000     
+          20 VALUE020    CW             1.00000000000000     
+          21 VALUE021    PCI            1.00000000000000     
+          22 VALUE022    CNGco100       435.755585358938     
+          23 VALUE023    CpwAT100       1.05921636243995     
+          24 VALUE024    CpwRH100      0.986629012637568     
+          25 VALUE025    CpwBP100      0.857734777658199     
+          26 VALUE026    CpwCW100      0.965549192305626     
+          27 VALUE027    CpwPC100       1.01661071600000     
+          28 VALUE028    CpwFP100       1.00050000000000     
+          29 VALUE029    CNGco75        342.096080853041     
+          30 VALUE030    CpwAT75        1.05905265809193     
+          31 VALUE031    CpwRH75       0.986629012637568     
+          32 VALUE032    CpwBP75       0.857734777658199     
+          33 VALUE033    CpwCW75        1.01071082553944     
+          34 VALUE034    CpwPC75        1.01661071600000     
+          35 VALUE035    CpwFP75        1.00050000000000     
+          36 VALUE036    CNGco50        228.498023569066     
+          37 VALUE037    CpwAT50        1.05947552850184     
+          38 VALUE038    CpwRH50       0.986629012637568     
+          39 VALUE039    CpwBP50       0.857734777658199     
+          40 VALUE040    CpwCW50        1.01236620046281     
+          41 VALUE041    CpwPC50        1.01661071600000     
+          42 VALUE042    CpwFP50        1.00050000000000     
+          43 VALUE043    CNGco25        124.027061921906     
+          44 VALUE044    CpwAT25        1.05867360446278     
+          45 VALUE045    CpwRH25       0.986629012637568     
+          46 VALUE046    CpwBP25       0.857734777658199     
+          47 VALUE047    CpwCW25        1.09939826789279     
+          48 VALUE048    CpwPC25        1.01661071600000     
+          49 VALUE049    CpwFP25        1.00050000000000     
+          50 VALUE050    Carga         0.201568912563142     
+          51 VALUE051    CN             1.00000000000000     
+          52 VALUE052    Eh5           0.000000000000000E+000
+          53 VALUE053    CTUNGxx        328874.246620295     
+          54 VALUE054    CTUNG100       6722.00000000000     
+          55 VALUE055    CTUNG75        7225.00000000000     
+          56 VALUE056    CTUNG55       0.000000000000000E+000
+          57 VALUE057    CTUNG50        7677.00000000000     
+          58 VALUE058    CTUNG25        9871.00000000000     
+          59 VALUE059    CTUNG2        0.000000000000000E+000
+          60 VALUE060    CTOV           343010070.258131     
+          61 VALUE061    CNGann25       128.600000000000     
+          62 VALUE062    NPann25       0.000000000000000E+000
+          63 VALUE063    CTUN           300567.224793932     
+          64 VALUE064    ChrAT          1.01653050423236     
+          65 VALUE065    ChrRH          1.00006340366213     
+          66 VALUE066    ChrBP          1.00394550223441     
+          67 VALUE067    ChrCW         0.897614221975412     
+          68 VALUE068    ChrPCI        0.998116288000000     
+          69 VALUE069    ChrFP         0.999500000000000     
+          70 VALUE070    CNman         0.000000000000000E+000
+          71 VALUE071    CNsum         0.998169255012678     
+          72 VALUE072    Cargasum      0.201568912563142     
+          73 VALUE073    EDh           0.000000000000000E+000
+          74 VALUE074    CNGann        0.000000000000000E+000
+          75 VALUE075    CpwAT          1.05867360446278     
+          76 VALUE076    CpwRH         0.986629012637568     
+          77 VALUE077    CpwBP         0.857734777658199     
+          78 VALUE078    CpwCW          1.09939826789279     
+          79 VALUE079    CpwPCI         1.01661071600000     
+          80 VALUE080    CpwFP          1.00050000000000     
+          81 VALUE081    CNver         0.998169255012678     
+          82 VALUE082    ChrCTOV        1.00589463418807     
+          83 VALUE083    CTOV2          341000000.000000     
+  *SYMD          27
+           1 ChrAT100   1.02061823484345     
+           2 ChrRH100   1.00006340366213     
+           3 ChrBP100   1.00394550223441     
+           4 ChrPC100  0.998116288000000     
+           5 ChrCW100   1.01516963294803     
+           6 ChrFP100  0.999500000000000     
+           7 ChrAT75    1.00871119430974     
+           8 ChrRH75    1.00006340366213     
+           9 ChrBP75    1.00394550223441     
+          10 ChrPC75   0.998116288000000     
+          11 ChrCW75   0.989200261704143     
+          12 ChrFP75   0.999500000000000     
+          13 ChrAT50    1.01349915964714     
+          14 ChrRH50    1.00006340366213     
+          15 ChrBP50    1.00394550223441     
+          16 ChrPC50   0.998116288000000     
+          17 ChrCW50   0.987498407181731     
+          18 ChrFP50   0.999500000000000     
+          19 ChrAT25    1.01653050423236     
+          20 ChrRH25    1.00006340366213     
+          21 ChrBP25    1.00394550223441     
+          22 ChrPC25   0.998116288000000     
+          23 ChrCW25   0.897614221975412     
+          24 ChrFP25   0.999500000000000     
+          25 Chrp      0.913927520572796     
+          26 Cpw        1.00183410276176     
+          27 CNtmp      1.00000000000000     
+  SOURCE FILE NOT SETTING           4         157
+  SOURCE FILE NOT SETTING           5         158
+  SOURCE FILE NOT SETTING           6         159
+  SOURCE FILE NOT SETTING           7         160
+  XQT:KT,NPT(KT)           3         437
+  IF            1   1.00000000000000       0.000000000000000E+000
+  IS,I          76          94   IPT(2,I,KT)=      4
+  IF            1  0.201568912563142       0.000000000000000E+000
+  IS,I         104         133   IPT(2,I,KT)=      3
+  IF            1  0.201568912563142       0.000000000000000E+000
+  IS,I         196         294   IPT(2,I,KT)=      6
+  IF            1  0.201568912563142       0.000000000000000E+000
+  IS,I         305         402   IPT(2,I,KT)=      6
+  IF            1   1.00000000000000       0.000000000000000E+000
+  IS,I         416         434   IPT(2,I,KT)=      4
+  XQT:KT,NPT(KT)           3         437
+  IF            1   1.00000000000000       0.000000000000000E+000
+  IS,I          76          94   IPT(2,I,KT)=      4
+  IF            1  0.201568912563142       0.000000000000000E+000
+  IS,I         104         133   IPT(2,I,KT)=      3
+  IF            1  0.201568912563142       0.000000000000000E+000
+  IS,I         196         294   IPT(2,I,KT)=      6
+  IF            1  0.201568912563142       0.000000000000000E+000
+  IS,I         305         402   IPT(2,I,KT)=      6
+  IF            1   1.00000000000000       0.000000000000000E+000
+  IS,I         416         434   IPT(2,I,KT)=      4
+  XQT:KT,NPT(KT)           3         437
+  IF            1   1.00000000000000       0.000000000000000E+000
+  IS,I          76          94   IPT(2,I,KT)=      4
+  IF            1  0.201568912563142       0.000000000000000E+000
+  IS,I         104         133   IPT(2,I,KT)=      3
+  IF            1  0.201568912563142       0.000000000000000E+000
+  IS,I         196         294   IPT(2,I,KT)=      6
+  IF            1  0.201568912563142       0.000000000000000E+000
+  IS,I         305         402   IPT(2,I,KT)=      6
+  IF            1   1.00000000000000       0.000000000000000E+000
+  IS,I         416         434   IPT(2,I,KT)=      4

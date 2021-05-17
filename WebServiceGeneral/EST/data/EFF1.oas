@@ -1,0 +1,281 @@
+!=====================================================================
+! Math model program 
+!=====================================================================
+! rev.0->  2006.2.10     comment()
+!---------------------------------------------------------------------
+*CON
+LIMIT=0.00001
+LIM100=100.0
+LIM75=75.0
+LIM50=50.0
+LIM25=25.0
+LIM2=2.0
+LIM0=0
+*FORM
+!+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+!  CTUNG for TUXPAN-V
+!+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+!=====================================================================
+!CNG100-25 CALCURATE     (PASO2)
+!=====================================================================
+CNG100=495.0
+CNG75=371.3
+CNG50=247.5
+CNG25=123.8
+!=====================================================================
+!CNGco100 CALCULATE
+!=====================================================================
+CpwAT100=func3(1,AT,100.0)
+CpwRH100=func3(2,RH,100.0)
+CpwBP100=func3(3,BP,100.0)
+CpwPC100=func3(4,PCI,100.0)
+CpwCW100=func3(5,CW,100.0)
+CpwFP100=func3(6,FP,100.0)
+CNGco100=CNG100*CpwAT100*CpwRH100*CpwBP100*CpwCW100*CpwPC100*CpwFP100
+!=====================================================================
+!CNGco75 CALCULATE
+!=====================================================================
+CpwAT75=func3(1,AT,75.0)
+CpwRH75=func3(2,RH,75.0)
+CpwBP75=func3(3,BP,75.0)
+CpwPC75=func3(4,PCI,75.0)
+CpwCW75=func3(5,CW,75.0)
+CpwFP75=func3(6,FP,75.0)
+CNGco75=CNG75*CpwAT75*CpwRH75*CpwBP75*CpwCW75*CpwPC75*CpwFP75
+!=====================================================================
+!CNGco50 CALCULATE
+!=====================================================================
+CpwAT50=func3(1,AT,50.0)
+CpwRH50=func3(2,RH,50.0)
+CpwBP50=func3(3,BP,50.0)
+CpwPC50=func3(4,PCI,50.0)
+CpwCW50=func3(5,CW,50.0)
+CpwFP50=func3(6,FP,50.0)
+CNGco50=CNG50*CpwAT50*CpwRH50*CpwBP50*CpwCW50*CpwPC50*CpwFP50
+!=====================================================================
+!CNGco25 CALCULATE
+!=====================================================================
+CpwAT25=func3(1,AT,25.0)
+CpwRH25=func3(2,RH,25.0)
+CpwBP25=func3(3,BP,25.0)
+CpwPC25=func3(4,PCI,25.0)
+CpwCW25=func3(5,CW,25.0)
+CpwFP25=func3(6,FP,25.0)
+CNGco25=CNG25*CpwAT25*CpwRH25*CpwBP25*CpwCW25*CpwPC25*CpwFP25
+!====================================================================
+!ACTUAL Carga(%) CALCULATE     (PASO3)
+!====================================================================
+IF(CN.GE.CNGco100) 100
+IF(CN.GE.CNGco75)  075
+IF(CN.GE.CNGco50)  050
+IF(CN.GE.CNGco25)  025
+IF(CN.GE.LIM0)  000
+Carga=0
+go to NEXT1
+100:Carga=100.0
+go to NEXT1
+075:Carga=(CN-CNGco75)*25.0/(CNGco100-CNGco75)+75.0
+go to NEXT1
+050:Carga=(CN-CNGco50)*25.0/(CNGco75-CNGco50)+50.0
+go to NEXT1
+025:Carga=(CN-CNGco25)*25.0/(CNGco50-CNGco25)+25.0
+go to NEXT1
+000:Carga=25.0/CNGco25*CN
+NEXT1:
+!====================================================================
+!CTUNG at 1 year average design condition(24.7degC)     (PASO4)
+!====================================================================
+CTUNG100=6722
+CTUNG75=7225
+CTUNG50=7677
+CTUNG25=9871
+CNGann25=128.6
+!--- 2005.1.27 data tuning --341000 -> 341000000 --------------------
+ChrCTOV=func3(14,AT,Carga)
+CTOV=ChrCTOV*341000000
+CTOV2=341000000
+!.....................................................................
+!CTUNG2=(CTOV+(CNGann25*CTUNG25-CTOV2)/25.0*2.0)/(CNGann25*(2.0/25.0))
+IF(Carga.GE.LIM100) 1100
+IF(Carga.GE.LIM75)  1075
+IF(Carga.GE.LIM50)  1050
+IF(Carga.GE.LIM25)  1025
+IF(Carga.GE.LIM2)   1002
+IF(Carga.GE.LIM0)   1000
+CTUNGxx=0
+go to NEXT2
+1100:CTUNGxx=CTUNG100
+go to NEXT2
+1075:CTUNGxx=CTUNG100-(CTUNG100-CTUNG75)/25.0*(100.0-Carga)
+go to NEXT2
+1050:CTUNGxx=CTUNG75-(CTUNG75-CTUNG50)/25.0*(75.0-Carga)
+go to NEXT2
+1025:CTUNGxx=CTUNG50-(CTUNG50-CTUNG25)/25.0*(50.0-Carga)
+go to NEXT2
+1002:CTUNGxx=((CNGann25*CTUNG25*1000-CTOV2)/23*(Carga-2)+CTOV2)/?
+(CNGann25*Carga/25*1000)
+go to NEXT2
+1000:CTUNGxx=CTOV2/(CNGann25*Carga/25*1000)
+NEXT2:
+!====================================================================
+!CTUNG at actual operating      (PASO5)
+!====================================================================
+ChrAT=func3(7,AT,Carga)
+ChrRH=func3(8,RH,Carga)
+ChrBP=func3(9,BP,Carga)
+ChrPCI=func3(10,PCI,Carga)
+ChrCW=func3(11,CW,Carga)
+ChrFP=func3(12,FP,Carga)
+!--------------------------------------------------------------------
+ChrAT100=func3(7,AT,LIM100)
+ChrRH100=func3(8,RH,LIM100)
+ChrBP100=func3(9,BP,LIM100)
+ChrPC100=func3(10,PCI,LIM100)
+ChrCW100=func3(11,CW,LIM100)
+ChrFP100=func3(12,FP,LIM100)
+! 20060127　Chrp100=ChrAT100*ChrRH100*ChrBP100*ChrPC100*ChrCW100*ChrFP100
+!--------------------------------------------------------------------
+ChrAT75=func3(7,AT,LIM75)
+ChrRH75=func3(8,RH,LIM75)
+ChrBP75=func3(9,BP,LIM75)
+ChrPC75=func3(10,PCI,LIM75)
+ChrCW75=func3(11,CW,LIM75)
+ChrFP75=func3(12,FP,LIM75)
+! 20060127　Chrp75=ChrAT75*ChrRH75*ChrBP75*ChrPC75*ChrCW75*ChrFP75
+!--------------------------------------------------------------------
+ChrAT50=func3(7,AT,LIM50)
+ChrRH50=func3(8,RH,LIM50)
+ChrBP50=func3(9,BP,LIM50)
+ChrPC50=func3(10,PCI,LIM50)
+ChrCW50=func3(11,CW,LIM50)
+ChrFP50=func3(12,FP,LIM50)
+! 20060127　Chrp50=ChrAT50*ChrRH50*ChrBP50*ChrPC50*ChrCW50*ChrFP50
+!--------------------------------------------------------------------
+ChrAT25=func3(7,AT,LIM25)
+ChrRH25=func3(8,RH,LIM25)
+ChrBP25=func3(9,BP,LIM25)
+ChrPC25=func3(10,PCI,LIM25)
+ChrCW25=func3(11,CW,LIM25)
+ChrFP25=func3(12,FP,LIM25)
+! 20060127　Chrp25=ChrAT25*ChrRH25*ChrBP25*ChrPC25*ChrCW25*ChrFP25
+!--------------------------------------------------------------------
+IF(Carga.GE.LIM100) 3100
+IF(Carga.GE.LIM75)  3075
+IF(Carga.GE.LIM50)  3050
+IF(Carga.GE.LIM25)  3025
+IF(Carga.GE.LIM0)   3000
+CTUN=0
+go to NEXT4
+3100:ChrAT=ChrAT100
+ChrRH=ChrRH100
+ChrBP=ChrBP100
+ChrPCI=ChrPC100
+ChrCW=ChrCW100
+ChrFP=ChrFP100
+go to NEXT4
+3075:ChrAT=(ChrAT100-ChrAT75)/25*(Carga-75)+ChrAT75
+ChrRH=(ChrRH100-ChrRH75)/25*(Carga-75)+ChrRH75
+ChrBP=(ChrBP100-ChrBP75)/25*(Carga-75)+ChrBP75
+ChrPCI=(ChrPC100-ChrPC75)/25*(Carga-75)+ChrPC75
+ChrCW=(ChrCW100-ChrCW75)/25*(Carga-75)+ChrCW75
+ChrFP=(ChrFP100-ChrFP75)/25*(Carga-75)+ChrFP75
+go to NEXT4
+3050:ChrAT=(ChrAT75-ChrAT50)/25*(Carga-50)+ChrAT50
+ChrRH=(ChrRH75-ChrRH50)/25*(Carga-50)+ChrRH50
+ChrBP=(ChrBP75-ChrBP50)/25*(Carga-50)+ChrBP50
+ChrPCI=(ChrPC75-ChrPC50)/25*(Carga-50)+ChrPC50
+ChrCW=(ChrCW75-ChrCW50)/25*(Carga-50)+ChrCW50
+ChrFP=(ChrFP75-ChrFP50)/25*(Carga-50)+ChrFP50
+go to NEXT4
+3025:ChrAT=(ChrAT50-ChrAT25)/25*(Carga-25)+ChrAT25
+ChrRH=(ChrRH50-ChrRH25)/25*(Carga-25)+ChrRH25
+ChrBP=(ChrBP50-ChrBP25)/25*(Carga-25)+ChrBP25
+ChrPCI=(ChrPC50-ChrPC25)/25*(Carga-25)+ChrPC25
+ChrCW=(ChrCW50-ChrCW25)/25*(Carga-25)+ChrCW25
+ChrFP=(ChrFP50-ChrFP25)/25*(Carga-25)+ChrFP25
+go to NEXT4
+3000:ChrAT=ChrAT25
+ChrRH=ChrRH25
+ChrBP=ChrBP25
+ChrPCI=ChrPC25
+ChrCW=ChrCW25
+ChrFP=ChrFP25
+NEXT4: Chrp=ChrAT*ChrRH*ChrBP*ChrPCI*ChrCW*ChrFP
+CTUN=CTUNGxx*Chrp
+!====================================================================
+!CN Verano  CALCULATION            (8.3)                            
+!====================================================================
+IF(Carga.GE.LIM100) 4100
+IF(Carga.GE.LIM75) 4075
+IF(Carga.GE.LIM50)  4050
+IF(Carga.GE.LIM25)  4025
+IF(Carga.GE.LIM0)   4000
+go to NEXT5
+!--------------------------------------------------------------------
+4100:CpwAT=CpwAT100
+CpwRH=CpwRH100
+CpwBP=CpwBP100
+CpwPCI=CpwPC100
+CpwCW=CpwCW100
+CpwFP=CpwFP100
+go to NEXT5
+4075:CpwAT=(CpwAT100-CpwAT75)/25*(Carga-75)+CpwAT75
+CpwRH=(CpwRH100-CpwRH75)/25*(Carga-75)+CpwRH75
+CpwBP=(CpwBP100-CpwBP75)/25*(Carga-75)+CpwBP75
+CpwPCI=(CpwPC100-CpwPC75)/25*(Carga-75)+CpwPC75
+CpwCW=(CpwCW100-CpwCW75)/25*(Carga-75)+CpwCW75
+CpwFP=(CpwFP100-CpwFP75)/25*(Carga-75)+CpwFP75
+go to NEXT5
+4050:CpwAT=(CpwAT75-CpwAT50)/25*(Carga-50)+CpwAT50
+CpwRH=(CpwRH75-CpwRH50)/25*(Carga-50)+CpwRH50
+CpwBP=(CpwBP75-CpwBP50)/25*(Carga-50)+CpwBP50
+CpwPCI=(CpwPC75-CpwPC50)/25*(Carga-50)+CpwPC50
+CpwCW=(CpwCW75-CpwCW50)/25*(Carga-50)+CpwCW50
+CpwFP=(CpwFP75-CpwFP50)/25*(Carga-50)+CpwFP50
+go to NEXT5
+4025:CpwAT=(CpwAT50-CpwAT25)/25*(Carga-25)+CpwAT25
+CpwRH=(CpwRH50-CpwRH25)/25*(Carga-25)+CpwRH25
+CpwBP=(CpwBP50-CpwBP25)/25*(Carga-25)+CpwBP25
+CpwPCI=(CpwPC50-CpwPC25)/25*(Carga-25)+CpwPC25
+CpwCW=(CpwCW50-CpwCW25)/25*(Carga-25)+CpwCW25
+CpwFP=(CpwFP50-CpwFP25)/25*(Carga-25)+CpwFP25
+go to NEXT5
+4000:CpwAT=CpwAT25
+CpwRH=CpwRH25
+CpwBP=CpwBP25
+CpwPCI=CpwPC25
+CpwCW=CpwCW25
+CpwFP=CpwFP25
+NEXT5: Cpw=CpwAT*CpwRH*CpwBP*CpwPCI*CpwCW*CpwFP
+CNver=CN/Cpw
+!=====================================================================
+!CN manual input CALCURATE
+!=====================================================================
+CNtmp=CNman
+IF(CNman.GE.LIMIT) INP001
+CNtmp=CN
+INP001:
+CNtmp=CNtmp
+!====================================================================
+!SUMMER Carga(%) CALCULATION
+!====================================================================
+IF(CNtmp.GE.CNGco100) 2100
+IF(CNtmp.GE.CNGco75)  2075
+IF(CNtmp.GE.CNGco50)  2050
+IF(CNtmp.GE.CNGco25)  2025
+IF(CNtmp.GE.LIM0)  2000
+Cargasum=0
+go to NEXT3
+2100:Cargasum=100.0
+go to NEXT3
+2075:Cargasum=(CNtmp-CNGco75)*25.0/(CNGco100-CNGco75)+75.0
+go to NEXT3
+2050:Cargasum=(CNtmp-CNGco50)*25.0/(CNGco75-CNGco50)+50.0
+go to NEXT3
+2025:Cargasum=(CNtmp-CNGco25)*25.0/(CNGco50-CNGco25)+25.0
+go to NEXT3
+2000:Cargasum=25.0/CNGco25*CNtmp
+NEXT3:CNsum=func3(13,Cargasum,100.0)
+!=====================================================================
+*END
+!+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++

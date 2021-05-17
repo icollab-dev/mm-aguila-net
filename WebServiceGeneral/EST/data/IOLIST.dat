@@ -1,0 +1,83 @@
+1,MWGT1,Energia activa en terminales de generador de TG - 1
+2,MWGT2,Energia reactiva en terminales del generador de TG - 2
+3,MWST,Energia activa en terminales de generador de TV
+4,MvarGT1,Energia reactiva en terminales del generador de TG - 1
+5,MvarGT2,Energia reactiva en terminales del generador de TG - 2
+6,MvarST, Energia reactiva en terminales del generador de TV
+7,52GonGT1,
+8,52GonGT2,
+9,CBclGT1,
+10,CBclGT2,
+11,CBclST,
+12,FP,Factor de Potencia General en Terminales del Generador
+13,CNG100,Capacidad Neta Garantizada al 100% en condiciones de Di
+14,CNG75,
+15,CNG50,
+16,CNG25,
+17,AT,Temperatura de Bulbo Seco
+18,RH,Humedad Relativa
+19,BP,Presion Atmosfirica
+20,CW,Temperatura de Agua de Mar
+21,PCI,Poder Calorifico Inferior del Combustible 
+22,CNGco100,"Capacidad Neta de Energia al 100%  de Carga" a cond
+23,CpwAT100,Factor de Correccion de Capacidad Neta (100%) para T
+24,CpwRH100,Factor de Correccion de Capacidad Neta (100%) para H
+25,CpwBP100,Factor de Correccion de Capacidad Neta (100%) para P
+26,CpwCW100,Factor de Correccion de Capacidad Neta (100%) para T
+27,CpwPC100,Factor de Correccion de Capacidad Neta (100%) para V
+28,CpwFP100,Factor de Correccion de Capacidad Neta (100%) para F
+29,CNGco75,
+30,CpwAT75,
+31,CpwRH75,
+32,CpwBP75,
+33,CpwCW75,
+34,CpwPC75,
+35,CpwFP75,
+36,CNGco50,
+37,CpwAT50,
+38,CpwRH50,
+39,CpwBP50,
+40,CpwCW50,
+41,CpwPC50,
+42,CpwFP50,
+43,CNGco25,
+44,CpwAT25,
+45,CpwRH25,
+46,CpwBP25,
+47,CpwCW25,
+48,CpwPC25,
+49,CpwFP25,
+50,Carga,
+51,CN,Capacidad Neta Actual
+52,Eh5,
+53,CTUNGxx,CTUNG a XX de carga (%)
+54,CTUNG100,CTUNG a 100% de carga
+55,CTUNG75,CTUNG a 75% de carga
+56,CTUNG55,CTUNG a 55% de carga
+57,CTUNG50,CTUNG a 50% de carga
+58,CTUNG25,CTUNG a 25% de carga
+59,CTUNG2,CTUNG a 2% de carga
+60,CTOV,Consumo de combustible a operacion sin carga
+61,CNGann25,
+62,NPann25,
+63,CTUN,CTUNG corregido : a las condiciones actuales de oper
+64,ChrAT,Factor de Correccion de CTUNG para Temperatura de B
+65,ChrRH,Factor de Correccion de CTUNG para Humedad Relativa
+66,ChrBP,Factor de Correccion de CTUNG para Presion Atmosfir
+67,ChrCW,Factor de Correccion de CTUNG para Temperatura de A
+68,ChrPCI,Factor de Correccion de CTUNG para Valor Calorifico
+69,ChrFP,Factor de correccion de CTUNG para Factor de Potenc
+70,CNman,
+71,CNsum,
+72,Cargasum,
+73,EDh,Correccion a la Capacidad Neta Declarada Disponible p
+74,CNGann,
+75,CpwAT,Factor de Correccion de Capacidad Neta para T
+76,CpwRH,Factor de Correccion de Capacidad Neta para H
+77,CpwBP,Factor de Correccion de Capacidad Neta para P
+78,CpwCW,Factor de Correccion de Capacidad Neta para T
+79,CpwPCI,Factor de Correccion de Capacidad Neta para V
+80,CpwFP,Factor de Correccion de Capacidad Neta para F
+81,CNver,
+82,ChrCTOV,Factor de correccion de CTUNG para Factor de CTOV
+83,CTOV2,

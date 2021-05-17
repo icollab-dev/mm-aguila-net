@@ -1,0 +1,157 @@
+ %% PLEASE DO NOT MODIFY OR DELETE THIS FILE! %% 
+ %% This file contains information about the installation of an application. %% 
+ %% It will be used to automatically remove all application components from your computer if you choose to do so. %% 
+
+
+NOTE: Beginning of the bootstrapper section
+
+*** ERROR: Unable to create a directory named 'C:'
+*** DURING THIS ACTION: CreateDir: "C:"
+
+CONFIG: Title: "CTUNG"
+
+*** ERROR: Unable to create a directory named 'C:'
+*** DURING THIS ACTION: CreateDir: "C:"
+
+*** ERROR: Unable to create a directory named 'C:'
+*** DURING THIS ACTION: CreateDir: "C:"
+
+ACTION: RegKey: "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion", "SharedDLLs"
+
+ACTION: SystemFile: "C:\WINDOWS\system32\VB6STKIT.DLL"
+(File was not found or was an older version -- new file copied)
+
+ACTION: SystemFile: "C:\WINDOWS\SYSTEM32\COMCAT.DLL"
+(File currently on disk was already up to date)
+
+ACTION: SystemFile: "C:\WINDOWS\SYSTEM32\STDOLE2.TLB"
+(File currently on disk was already up to date)
+
+ACTION: SystemFile: "C:\WINDOWS\SYSTEM32\ASYCFILT.DLL"
+(File currently on disk was already up to date)
+
+ACTION: SystemFile: "C:\WINDOWS\SYSTEM32\OLEPRO32.DLL"
+(File currently on disk was already up to date)
+
+ACTION: SystemFile: "C:\WINDOWS\SYSTEM32\OLEAUT32.DLL"
+(File currently on disk was already up to date)
+
+ACTION: SystemFile: "C:\WINDOWS\SYSTEM32\MSVBVM60.DLL"
+(File currently on disk was already up to date)
+
+ACTION: DllSelfRegister: "C:\WINDOWS\SYSTEM32\COMCAT.DLL"
+
+ACTION: TLBRegister: "C:\WINDOWS\SYSTEM32\STDOLE2.TLB"
+
+ACTION: DllSelfRegister: "C:\WINDOWS\SYSTEM32\OLEPRO32.DLL"
+
+ACTION: DllSelfRegister: "C:\WINDOWS\SYSTEM32\OLEAUT32.DLL"
+
+ACTION: DllSelfRegister: "C:\WINDOWS\SYSTEM32\MSVBVM60.DLL"
+
+NOTE: End of the bootstrapper section
+
+NOTE: Now spawning the main Setup program 'Setup1.exe'....
+
+ACTION: CreateDir: "C:\Archivos de programa\CTUNG"
+
+ACTION: CreateDir: "C:\Documents and Settings\cav3rna\Menú Inicio\Programas\CTUNG EST"
+
+ACTION: CreateDir: "C:\Archivos de programa\CTUNG\data"
+
+ACTION: PrivateFile: "C:\Archivos de programa\CTUNG\data\CALOUT.csv"
+(File was not found or was an older version -- new file copied)
+
+ACTION: PrivateFile: "C:\Archivos de programa\CTUNG\data\MESS.DAT"
+(File was not found or was an older version -- new file copied)
+
+ACTION: PrivateFile: "C:\Archivos de programa\CTUNG\data\lastvalue.dmp"
+(File was not found or was an older version -- new file copied)
+
+ACTION: PrivateFile: "C:\Archivos de programa\CTUNG\data\IOLIST.dat"
+(File was not found or was an older version -- new file copied)
+
+ACTION: PrivateFile: "C:\Archivos de programa\CTUNG\data\FORMLA.LST"
+(File was not found or was an older version -- new file copied)
+
+ACTION: PrivateFile: "C:\Archivos de programa\CTUNG\data\FNAME.PMF"
+(File was not found or was an older version -- new file copied)
+
+ACTION: PrivateFile: "C:\Archivos de programa\CTUNG\data\EFF1.oas"
+(File was not found or was an older version -- new file copied)
+
+ACTION: PrivateFile: "C:\Archivos de programa\CTUNG\data\VALUE.DAT"
+(File was not found or was an older version -- new file copied)
+
+ACTION: PrivateFile: "C:\Archivos de programa\CTUNG\ENGLISH.ini"
+(File was not found or was an older version -- new file copied)
+
+ACTION: PrivateFile: "C:\Archivos de programa\CTUNG\SPANISH.ini"
+(File was not found or was an older version -- new file copied)
+
+ACTION: PrivateFile: "C:\Archivos de programa\CTUNG\MSSCCPRJ.SCC"
+(File was not found or was an older version -- new file copied)
+
+ACTION: PrivateFile: "C:\Archivos de programa\CTUNG\Dialog1.frm"
+(File was not found or was an older version -- new file copied)
+
+ACTION: PrivateFile: "C:\Archivos de programa\CTUNG\Dialog2.frm"
+(File was not found or was an older version -- new file copied)
+
+ACTION: PrivateFile: "C:\Archivos de programa\CTUNG\Module1.bas"
+(File was not found or was an older version -- new file copied)
+
+ACTION: PrivateFile: "C:\Archivos de programa\CTUNG\CTUNG.frm"
+(File was not found or was an older version -- new file copied)
+
+ACTION: PrivateFile: "C:\Archivos de programa\CTUNG\CTUNG.frx"
+(File was not found or was an older version -- new file copied)
+
+ACTION: PrivateFile: "C:\Archivos de programa\CTUNG\CTUNG.vbp"
+(File was not found or was an older version -- new file copied)
+
+ACTION: PrivateFile: "C:\Archivos de programa\CTUNG\CTUNG.vbw"
+(File was not found or was an older version -- new file copied)
+
+ACTION: PrivateFile: "C:\Archivos de programa\CTUNG\CTUNG.opt"
+(File was not found or was an older version -- new file copied)
+
+ACTION: PrivateFile: "C:\Archivos de programa\CTUNG\CTUNG.ini"
+(File was not found or was an older version -- new file copied)
+
+ACTION: PrivateFile: "C:\Archivos de programa\CTUNG\CTUNG.csv"
+(File was not found or was an older version -- new file copied)
+
+ACTION: PrivateFile: "C:\Archivos de programa\CTUNG\EXFORM.DAT"
+(File was not found or was an older version -- new file copied)
+
+ACTION: SharedFile: "C:\WINDOWS\system32\Dformd.dll"
+(File was not found or was an older version -- new file copied)
+
+ACTION: SharedFile: "C:\WINDOWS\system32\Dforrt.dll"
+(File was not found or was an older version -- new file copied)
+
+ACTION: SharedFile: "C:\WINDOWS\system32\MSSTDFMT.DLL"
+(File was not found or was an older version -- new file copied)
+
+ACTION: SharedFile: "C:\WINDOWS\system32\COMDLG32.OCX"
+(File was not found or was an older version -- new file copied)
+
+ACTION: CreateDir: "C:\Archivos de programa\CTUNG\dll"
+
+ACTION: PrivateFile: "C:\Archivos de programa\CTUNG\dll\CALCOF.dll"
+(File was not found or was an older version -- new file copied)
+
+ACTION: PrivateFile: "C:\Archivos de programa\CTUNG\CTUNG.exe"
+(File was not found or was an older version -- new file copied)
+
+ACTION: DllSelfRegister: "C:\WINDOWS\system32\MSSTDFMT.DLL"
+
+ACTION: DllSelfRegister: "C:\WINDOWS\system32\COMDLG32.OCX"
+
+ACTION: ShellLink: "CTUNG EST", "CTUNG"
+
+ACTION: RegKey: "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion", "App Paths\CTUNG.exe"
+
+ACTION: RegValue: "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\App Paths\CTUNG.exe", ""
+
